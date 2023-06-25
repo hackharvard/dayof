@@ -10,7 +10,6 @@
 </script>
 
 <main class="mt-20">
-  hi
   <Landing />
   <Welcome />
   <Tracks />
