@@ -1,3 +1,51 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+  .p-dynamic {
+    padding: calc((100vw + 5rem) / 21);
+  }
+  .px-dynamic {
+    padding-right: calc((100vw + 5rem) / 21);
+    padding-left: calc((100vw + 5rem) / 21);
+  }
+  .py-dynamic {
+    padding-top: calc((100vw + 5rem) / 21);
+    padding-bottom: calc((100vw + 5rem) / 21);
+  }
+  .pt-dynamic {
+    padding-top: calc((100vw + 5rem) / 21);
+  }
+  .pb-dynamic {
+    padding-bottom: calc((100vw + 5rem) / 21);
+  }
+  .m-dynamic {
+    margin: calc((100vw + 5rem) / 21);
+  }
+  .mx-dynamic {
+    margin-right: calc((100vw + 5rem) / 21);
+    margin-left: calc((100vw + 5rem) / 21);
+  }
+  .my-dynamic {
+    margin-top: calc((100vw + 5rem) / 21);
+    margin-bottom: calc((100vw + 5rem) / 21);
+  }
+  .mt-dynamic {
+    margin-top: calc((100vw + 5rem) / 21);
+  }
+  .mb-dynamic {
+    margin-bottom: calc((100vw + 5rem) / 21);
+  }
+  .shadow-b {
+    box-shadow: 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  }
+}
+
+body {
+  @apply scroll-smooth bg-primary font-sans text-secondary dark:text-primary antialiased;
+}
+
+.link {
+  @apply border-b border-secondary-500 text-secondary transition-colors duration-300 hover:border-secondary-300;
+}
