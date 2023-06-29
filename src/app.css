@@ -43,7 +43,7 @@
 }
 
 body {
-  @apply scroll-smooth bg-primary font-sans text-secondary dark:text-primary antialiased;
+  @apply scroll-smooth bg-primary font-sans text-secondary antialiased dark:text-primary;
 }
 
 .link {
