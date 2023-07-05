@@ -39,12 +39,14 @@ export default {
         100: '#6FEEFF',
         200: '#4E75FF'
       },
-      red: '#D80034',
+      red: '#D80034'
     },
     extend: {
       backgroundImage: {
-        'welcome-dark': "url('/sections/welcome-dark.jpg')",
-        'welcome-light': "url('/sections/welcome-light.jpg')"
+        // 'welcome-dark': "url('/sections/welcome-dark.jpg')",
+        'welcome-light': "url('/sections/welcome-light.jpg')",
+        'faq-light': "url('/sections/faq-light.jpg')",
+        'faq-dark': "url('/sections/faq-dark.jpg')"
       }
     }
   },
