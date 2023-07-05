@@ -4,7 +4,7 @@
   import Landing from '$lib/sections/Landing.svelte'
   import Speakers from '$lib/sections/Speakers.svelte'
   import Tracks from '$lib/sections/Tracks.svelte'
-  import Tracksprizes from '$lib/sections/TracksPrizes.svelte'
+  import TracksPrizes from '$lib/sections/TracksPrizes.svelte'
   import Welcome from '$lib/sections/Welcome.svelte'
   import Sponsors from '$lib/sections/Sponsors.svelte'
 </script>
@@ -15,7 +15,7 @@
   <Tracks />
   <Applications />
   <Faq />
-  <Tracksprizes />
+  <TracksPrizes />
   <Speakers />
   <Sponsors />
 </main>

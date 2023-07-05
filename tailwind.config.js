@@ -17,6 +17,7 @@ export default {
       gray: colors.gray,
       emerald: colors.emerald,
       indigo: colors.indigo,
+      purple: colors.purple,
       yellow: colors.yellow,
       primary: {
         DEFAULT: '#FCFCFC',
@@ -33,7 +34,12 @@ export default {
         300: '#170440',
         400: '#110133',
         500: '#0F0327'
-      }
+      },
+      blue: {
+        100: '#6FEEFF',
+        200: '#4E75FF'
+      },
+      red: '#D80034',
     },
     extend: {
       backgroundImage: {
