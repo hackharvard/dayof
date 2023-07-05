@@ -5,6 +5,10 @@ export default {
   content: ['./src/**/*.{html,js,svelte,ts}'],
   darkMode: 'class',
   theme: {
+    fontFamily: {
+      display: ['Lexend', 'sans-serif'],
+      body: ['Exo', 'sans-serif']
+    },
     extend: {
       colors: {
         transparent: 'transparent',
@@ -30,11 +34,18 @@ export default {
           300: '#170440',
           400: '#110133',
           500: '#0F0327'
-        }
+        },
+        blue: {
+          100: '#6FEEFF',
+          200: '#4E75FF'
+        },
+        red: '#D80034'
       },
       backgroundImage: {
-        'welcome-dark': "url('/sections/welcome-dark.jpg')",
-        'welcome-light': "url('/sections/welcome-light.jpg')"
+        // 'welcome-dark': "url('/sections/welcome-dark.jpg')",
+        'welcome-light': "url('/sections/welcome-light.jpg')",
+        'faq-light': "url('/sections/faq-light.jpg')",
+        'faq-dark': "url('/sections/faq-dark.jpg')"
       }
     }
   },
