@@ -5,6 +5,10 @@ export default {
   content: ['./src/**/*.{html,js,svelte,ts}'],
   darkMode: 'class',
   theme: {
+    fontFamily: {
+      display: ['Lexend', 'sans-serif'],
+      body: ['Exo', 'sans-serif']
+    },
     colors: {
       transparent: 'transparent',
       current: 'currentColor',
