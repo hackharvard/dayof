@@ -32,11 +32,9 @@ export default {
           500: '#0F0327'
         }
       },
-      extend: {
-        backgroundImage: {
-          'welcome-dark': "url('/sections/welcome-dark.jpg')",
-          'welcome-light': "url('/sections/welcome-light.jpg')"
-        }
+      backgroundImage: {
+        'welcome-dark': "url('/sections/welcome-dark.jpg')",
+        'welcome-light': "url('/sections/welcome-light.jpg')"
       }
     }
   },
