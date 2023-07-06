@@ -1,116 +1,122 @@
 <script>
-  let clicked = false
-  function handleClick() {
-    clicked = !clicked
-  }
+  import Marquee from '$lib/components/Marquee.svelte'
   import { theme } from '$lib/stores'
-  let mode
-  theme.subscribe(value => {
-    mode = value
-  })
 </script>
 
-<div class="flex justify-center flex items-center">
-  <h1 class="text-violet-700 dark:text-white text-8xl font-bold">APPLICATIONS</h1>
-</div>
-<div class="flex justify-center" style="height: 100px;"><h1 class="text-3xl">(BANNER)</h1></div>
-<div class="relative flex justify-center" style="height: 100px;">
-  <div>
-    <a href="/">
-      <button on:click={handleClick}>
-        {#if clicked}
-          <img
-            class="absolute transform -translate-x-1/2 -translate-y-1/2"
-            width="352"
-            height="85"
-            style="top:35%; left:50%;"
-            src={'/apply_button' + (mode == 'dark' ? '_dark' : '') + '.svg'}
-            alt=""
-          />
-          <h1
-            class="text-white absolute transform -translate-x-1/2 -translate-y-1/2 text-6xl font-bold"
-            style="top:35%; left:50%;"
-          >
-            APPLY!**
-          </h1>
-        {:else}
-          <img
-            class="absolute transform -translate-x-1/2 -translate-y-1/2"
-            width="352"
-            height="85"
-            style="top:35%; left:50%;"
-            src="/apply_button_shadow.svg"
-            alt=""
-          />
-          <img
-            class="absolute transform -translate-x-1/2 -translate-y-1/2"
-            width="352"
-            height="85"
-            style="top:30%; left:50%;"
-            src={'/apply_button' + (mode == 'dark' ? '_dark' : '') + '.svg'}
-            alt=""
-          />
-          <h1
-            class="text-white absolute transform -translate-x-1/2 -translate-y-1/2 text-6xl font-bold text-white"
-            style="top:30%; left:50;"
-          >
-            APPLY!**
-          </h1>
-        {/if}
-      </button>
-    </a>
+<div
+  class="py-dynamic space-y-4 bg-applications-light text-center dark:bg-applications-dark sm:space-y-8"
+>
+  <h1 class="px-dynamic text-5xl font-bold text-violet-700 dark:text-white sm:text-6xl md:text-8xl">
+    APPLICATIONS
+  </h1>
+  <Marquee />
+  <a
+    class="pressable px-dynamic inline-block rounded-full bg-red-600 px-6 py-2 text-3xl font-bold uppercase text-white before:bg-secondary hover:bg-red-400 sm:px-8 sm:py-3 sm:text-4xl md:px-10 md:py-4 md:text-6xl"
+    href="#applications"
+  >
+    Apply!**
+  </a>
+  <div class="px-dynamic md:text-lg">
+    **Applications for HackHarvard 2023 will open in mid-August. Fill out <a
+      href="https://forms.gle/FyaEZ2Stqn1Zpezh7"
+      target="_blank"
+      class="text-red-600 transition-colors hover:text-green-400"
+    >
+      this form
+    </a> if you want to be notified when applications open.
+  </div>
+  <div class="px-dynamic flex justify-center">
+    <div class="relative">
+      <img
+        class="h-40 max-h-48 object-fill sm:h-full"
+        src={'images/arrows/left' + ($theme == 'dark' ? '-dark' : '-light') + '.png'}
+        alt=""
+      />
+      <div class="absolute bottom-0 left-0 right-0 top-0 flex items-center justify-center">
+        <div class="font-bold uppercase text-white">
+          <div class="text-3xl md:text-4xl">Early</div>
+          <div class="text-2xl">Month DD</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="px-dynamic flex justify-center">
+    <div class="relative">
+      <img
+        class="h-40 max-h-48 object-fill sm:h-full"
+        src={'images/arrows/right' + ($theme == 'dark' ? '-dark' : '-light') + '.png'}
+        alt=""
+      />
+      <div class="absolute bottom-0 left-0 right-0 top-0 flex items-center justify-center">
+        <div class="font-bold uppercase text-white">
+          <div class="text-3xl md:text-4xl">Regular</div>
+          <div class="text-2xl">Month DD</div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
-<div class="flex justify-center" style="height: 35px;">
-  **Applications for HackHarvard 2023 will open in mid-August. Fill out&nbsp;<a
-    href="https://forms.gle/FyaEZ2Stqn1Zpezh7"
-    target="_blank"
-    class="text-red-600 hover:text-green-400"
-  >
-    this form
-  </a>&nbsp;if you want to be notified when applications open.
-</div>
-<div class="relative flex justify-center">
-  <img
-    width="858"
-    height="204"
-    src={'/left_arrow' + (mode == 'dark' ? '_dark' : '') + '.svg'}
-    alt=""
-  />
-  <h1
-    class="absolute transform -translate-x-1/2 -translate-y-1/2
-    text-4xl font-bold"
-    style="top:30%; left:50%; color:white"
-  >
-    EARLY
-  </h1>
-  <h1
-    class="absolute transform -translate-x-1/2 -translate-y-1/2
-    text-7xl font-bold"
-    style="top:55%; left:50%; color:white"
-  >
-    MONTH DD
-  </h1>
-</div>
-<div class="relative flex justify-center">
-  <img
-    width="858"
-    height="204"
-    src={'/right_arrow' + (mode == 'dark' ? '_dark' : '') + '.svg'}
-    alt=""
-  />
-  <h1
-    class="absolute transform -translate-x-1/2 -translate-y-1/2
-      text-4xl font-bold"
-    style="top:30%; left:50%; color:white"
-  >
-    REGULAR
-  </h1>
-  <h1
-    class="absolute transform -translate-x-1/2 -translate-y-1/2
-      text-7xl font-bold"
-    style="top:55%; left:50%; color:white"
-  >
-    MONTH DD
-  </h1>
-</div>
+
+<style>
+  .pressable {
+    transition: transform 0.15s;
+    transform-style: preserve-3d;
+  }
+  .pressable::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: inherit;
+    transform: translate3d(0, 0.5rem, -1rem);
+    transition: transform 0.15s;
+  }
+  .pressable:hover {
+    transform: translateY(0.1rem);
+  }
+  .pressable:hover::before {
+    transform: translate3d(0, 0.4rem, -1rem);
+  }
+  .pressable:active {
+    transform: translateY(0.4rem);
+  }
+  .pressable:active::before {
+    transform: translate3d(0, 0.1rem, -1rem);
+  }
+  @media (min-width: 640px) {
+    .pressable::before {
+      transform: translate3d(0, 0.6rem, -1rem);
+    }
+    .pressable:hover {
+      transform: translateY(0.2rem);
+    }
+    .pressable:hover::before {
+      transform: translate3d(0, 0.4rem, -1rem);
+    }
+    .pressable:active {
+      transform: translateY(0.4rem);
+    }
+    .pressable:active::before {
+      transform: translate3d(0, 0.2rem, -1rem);
+    }
+  }
+  @media (min-width: 768px) {
+    .pressable::before {
+      transform: translate3d(0, 0.8rem, -1rem);
+    }
+    .pressable:hover {
+      transform: translateY(0.2rem);
+    }
+    .pressable:hover::before {
+      transform: translate3d(0, 0.6rem, -1rem);
+    }
+    .pressable:active {
+      transform: translateY(0.6rem);
+    }
+    .pressable:active::before {
+      transform: translate3d(0, 0.2rem, -1rem);
+    }
+  }
+</style>

@@ -35,19 +35,21 @@ export default {
           400: '#110133',
           500: '#0F0327'
         },
-        blue: {
-          100: '#6FEEFF',
-          200: '#4E75FF'
-        },
-        red: '#D80034'
+        blue: colors.blue,
+        red: colors.red
       },
       backgroundImage: {
-        // 'welcome-dark': "url('/sections/welcome-dark.jpg')",
-        'welcome-light': "url('/sections/welcome-light.jpg')",
-        'faq-light': "url('/sections/faq-light.jpg')",
-        'faq-dark': "url('/sections/faq-dark.jpg')"
+        // 'welcome-dark': "url('/images/sections/welcome-dark.jpg')",
+        'welcome-light': "url('/images/sections/welcome-light.jpg')",
+        'faq-light': "url('/images/sections/faq-light.jpg')",
+        'faq-dark': "url('/images/sections/faq-dark.jpg')",
+        'applications-light': "url('/images/sections/applications-light.jpg')",
+        'applications-dark': "url('/images/sections/applications-dark.jpg')"
       }
     }
   },
-  plugins: []
+  plugins: [],
+  future: {
+    hoverOnlyWhenSupported: true
+  }
 }

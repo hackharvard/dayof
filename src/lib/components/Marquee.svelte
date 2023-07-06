@@ -1,13 +1,13 @@
 <div
-  class="flex uppercase text-2xl overflow-hidden w-full select-none gap-10 border-t-4 border-b-4 border-black py-2 font-bold"
+  class="flex w-full select-none gap-10 overflow-hidden border-b-4 border-t-4 border-black py-2 text-2xl font-bold uppercase dark:border-white"
 >
-  <div class="flex marquee min-w-full gap-10 justify-around shrink-0">
+  <div class="marquee flex min-w-full shrink-0 justify-around gap-10">
     <span>Apply today!</span>
     <span>HackHarvard 2023!</span>
     <span>Apply today!</span>
     <span>HackHarvard 2023!</span>
   </div>
-  <div class="flex marquee min-w-full gap-10 justify-around shrink-0">
+  <div class="marquee flex min-w-full shrink-0 justify-around gap-10">
     <span>Apply today!</span>
     <span>HackHarvard 2023!</span>
     <span>Apply today!</span>
