@@ -11,7 +11,7 @@
   </h1>
   <Marquee />
   <a
-    class="pressable px-dynamic inline-block rounded-full bg-red-600 px-6 py-2 text-3xl font-bold uppercase text-white before:bg-secondary hover:bg-red-400 sm:px-8 sm:py-3 sm:text-4xl md:px-10 md:py-4 md:text-6xl"
+    class="pressable px-dynamic inline-block rounded-full bg-red-600 px-6 py-2 text-3xl font-bold uppercase text-white transition-colors before:bg-secondary hover:bg-red-500 sm:px-8 sm:py-3 sm:text-4xl md:px-10 md:py-4 md:text-6xl"
     href="#applications"
   >
     Apply!**
@@ -59,7 +59,7 @@
 
 <style>
   .pressable {
-    transition: transform 0.15s;
+    transition: transform 100ms, background-color 300ms;
     transform-style: preserve-3d;
   }
   .pressable::before {
@@ -71,7 +71,7 @@
     bottom: 0;
     border-radius: inherit;
     transform: translate3d(0, 0.5rem, -1rem);
-    transition: transform 0.15s;
+    transition: transform 100ms, background-color 300ms;
   }
   .pressable:hover {
     transform: translateY(0.1rem);
