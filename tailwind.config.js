@@ -43,8 +43,9 @@ export default {
     },
     extend: {
       backgroundImage: {
+        'welcome-dark': "url('/bgs/welcome-dark.jpg')",
+        'welcome-light': "url('/bgs/welcome-light.jpg')",
         // 'welcome-dark': "url('/sections/welcome-dark.jpg')",
-        'welcome-light': "url('/sections/welcome-light.jpg')",
         'faq-light': "url('/sections/faq-light.jpg')",
         'faq-dark': "url('/sections/faq-dark.jpg')"
       }
