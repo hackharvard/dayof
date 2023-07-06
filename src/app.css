@@ -5,6 +5,9 @@
 @tailwind utilities;
 
 @layer utilities {
+  .h-dynamic {
+    height: calc(100vh - 5rem);
+  }
   .p-dynamic {
     padding: calc((100vw + 5rem) / 21);
   }
@@ -45,7 +48,7 @@
 }
 
 body {
-  @apply scroll-smooth bg-primary font-body text-secondary antialiased dark:text-primary;
+  @apply scroll-smooth bg-primary font-lexend text-secondary antialiased dark:text-primary;
 }
 
 .link {
