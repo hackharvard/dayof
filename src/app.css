@@ -49,5 +49,5 @@ body {
 }
 
 .link {
-  @apply border-b border-secondary-500 text-secondary transition-colors duration-300 hover:border-secondary-300;
+  @apply border-b border-secondary-500 text-secondary transition-colors duration-300 hover:border-secondary-300 dark:border-primary-400 dark:text-primary dark:hover:border-primary-300;
 }
