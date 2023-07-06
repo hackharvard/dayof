@@ -18,19 +18,15 @@
       <div class="ml-[2rem] w-10/12">
         <div class="mt-[1rem] text-left text-[1.1rem] text-white">
           <p>
-            Join us for the eighth iteration of HackHarvard, a 36-hour free hackathon hosted by
-            Harvard University students. This year, we are planning for an in-person hackathon for
-            U.S. students. This year, our theme is Hack to the Future...
+            Join us for the eighth iteration of HackHarvard, an exhilarating 36-hour free
+            undergraduate hackathon hosted at Harvard University.
           </p>
         </div>
         <div class="mt-[1rem] text-left text-[1.1rem] text-white">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-            dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-            mollit anim id est laborum.
+            Our theme for this year is Hack to the Future! Join us for an extraordinary voyage
+            through time, where cutting-edge technology and boundless creativity converge,
+            propelling us toward a future built on innovation and limitless possibilities.
           </p>
         </div>
       </div>
