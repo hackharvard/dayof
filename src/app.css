@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@400;700&family=Lexend:wght@400;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -43,9 +45,9 @@
 }
 
 body {
-  @apply scroll-smooth bg-primary font-sans text-secondary dark:text-primary antialiased;
+  @apply scroll-smooth bg-primary font-body text-secondary antialiased dark:text-primary;
 }
 
 .link {
-  @apply border-b border-secondary-500 text-secondary transition-colors duration-300 hover:border-secondary-300;
+  @apply border-b border-secondary-500 text-secondary transition-colors duration-300 hover:border-secondary-300 dark:border-primary-400 dark:text-primary dark:hover:border-primary-300;
 }
