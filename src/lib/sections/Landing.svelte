@@ -37,19 +37,19 @@
     clearInterval(countdown)
   })
 </script>
-
-<div class="h-dynamic p-dynamic grid grid-cols-2 bg-local">
-  <div class="">
-    <img src="rocket.png" alt="" class="w-full" />
+<div class="min-h-full lg:h-dynamic p-dynamic grid grid-cols-1 lg:grid-cols-2 bg-local-light dark: bg-local-dark">
+  <div class="flex items-center justify-center lg:-translate-x-10">
+    <img src={'images/rocket' + ($theme == 'dark' ? '-dark' : '-light') + '.png'} alt="" class="" />
+    
   </div>
   <div class="flex items-center justify-center">
-    <div class="text-center">
+    <div class="text-center mt-10 lg:mt-0">
       <!-- Placeholder HackHarvard text -->
       <img src={'images/title' + ($theme == 'dark' ? '-dark' : '-light') + '.png'} alt="" />
 
       <!-- Countdown  -->
-      <div class="mt-10 inline-block">
-        <div class="flex w-min gap-4 font-exo text-4xl font-bold text-white">
+      <div class="mt-10 flex items-center justify-center">
+        <div class="flex w-min gap-4 font-exo text-4xl font-bold text-white dark:text-opacity-0 dark: font-outline">
           <div>
             <div>{remainingTime.months}</div>
             <div>MONTHS</div>
@@ -70,10 +70,23 @@
       </div>
     </div>
   </div>
+
+  <!-- Social media banner -->
+  <!-- <div class="w-screen flex items-center justify-center bg-slate-400"> -->
+    <!-- p-dynamic in parent div makes this impossible to position idk -->
+  <!-- </div> -->
 </div>
 
 <style>
-  .bg-local {
+  .bg-local-light {
     background: radial-gradient(208.33% 121.31% at 14.48% 71.78%, #e63d3f 10.94%, #c0015d 89.58%);
+  }
+
+  .bg-local-dark {
+    background: #170440;
+  }
+
+  .font-outline {
+    -webkit-text-stroke: 1px white;
   }
 </style>
