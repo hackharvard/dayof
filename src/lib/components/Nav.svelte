@@ -37,12 +37,11 @@
     {
       name: 'Speakers',
       href: '#speakers'
-    },
-
-    {
-      name: 'Sponsors',
-      href: '#sponsors'
     }
+    // {
+    //   name: 'Sponsors',
+    //   href: '#sponsors'
+    // }
   ]
   function updateShadow() {
     shadow = window.scrollY !== 0
