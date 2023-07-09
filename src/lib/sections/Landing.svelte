@@ -2,6 +2,7 @@
   import { onMount, onDestroy } from 'svelte'
   import { theme } from '$lib/stores'
   import { format } from 'date-fns'
+  import Marquee from '../components/Marquee.svelte'
 
   // Countdown
   let countdown
@@ -32,6 +33,7 @@
     }
   }
   updateCountdown()
+
   onMount(() => {
     countdown = setInterval(updateCountdown, 1000)
   })
@@ -40,15 +42,31 @@
   })
 </script>
 
-<div class="h-dynamic flex flex-col" id="home">
-  <div class="p-dynamic grow dark:bg-secondary-300 lg:grid lg:grid-cols-2">
+<div class="bg-landing-light dark:bg-landing-dark" id="home">
+  <div class="p-dynamic grow lg:grid lg:grid-cols-2">
     <div class="flex items-center justify-center">
-      <div class="w-60 max-w-xl lg:w-full">
+      <div class="relative w-60 max-w-xl lg:w-full">
         <img
           src={'images/rocket' + ($theme == 'dark' ? '-dark' : '-light') + '.png'}
           alt=""
           class="h-full w-full object-cover"
         />
+        <svg
+          class="absolute bottom-0 left-[3%] h-16 w-16 -rotate-[135deg] text-white opacity-70 lg:bottom-[7%] lg:left-[10%] lg:h-20 lg:w-20"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <line class="animate a" x1="18" y1="20" x2="18" y2="10" pathLength="1" />
+          <line class="animate b" x1="12" y1="20" x2="12" y2="4" pathLength="1" />
+          <line class="animate c" x1="6" y1="20" x2="6" y2="14" pathLength="1" />
+        </svg>
       </div>
     </div>
     <div class="mt-10 lg:mt-0">
@@ -65,7 +83,7 @@
         <!-- Countdown  -->
         <div class="mt-10 flex items-center justify-center">
           <div
-            class="dark: font-outline flex w-min gap-4 font-exo text-2xl font-bold text-white dark:text-opacity-0 md:text-3xl lg:text-3xl"
+            class="flex w-min gap-4 font-exo text-[5vw] font-bold text-white sm:text-2xl md:text-3xl lg:text-3xl"
           >
             <div>
               <div>{remainingTime.months}</div>
@@ -88,112 +106,156 @@
       </div>
     </div>
   </div>
-  <!-- Social media banner -->
-  <div class="grid h-32 w-full shrink-0 grid-cols-1 bg-white dark:bg-gray-100 lg:grid-cols-2">
-    <div class="flex h-full items-center justify-center">
-      <div class="text-2xl font-bold uppercase text-secondary">Applications open {fmtdDate}!</div>
-    </div>
-    <div class="flex h-full items-center justify-center">
-      <div class="flex items-center gap-3">
-        <a class="rounded-md border-2 border-black p-1" href="#" target="_blank" rel="noreferrer">
-          <svg
-            class="h-7 w-7 text-black"
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          >
-            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
-          </svg>
-        </a>
-        <a class="rounded-md border-2 border-black p-1" href="#" target="_blank" rel="noreferrer">
-          <svg
-            class="h-7 w-7 text-black"
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          >
-            <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
-            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
-            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
-          </svg>
-        </a>
-        <a class="rounded-md border-2 border-black p-1" href="#" target="_blank" rel="noreferrer">
-          <svg
-            class="h-7 w-7 text-black"
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          >
-            <path
-              d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
-            />
-            <rect x="2" y="9" width="4" height="12" />
-            <circle cx="4" cy="4" r="2" />
-          </svg>
-        </a>
-        <a class="rounded-md border-2 border-black p-1" href="#" target="_blank" rel="noreferrer">
-          <svg
-            class="h-7 w-7 text-black"
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          >
-            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
-            <polyline points="22,6 12,13 2,6" />
-          </svg>
-        </a>
-        <a class="rounded-md border-2 border-black p-1" href="#" target="_blank" rel="noreferrer">
-          <svg
-            class="h-7 w-7 text-black"
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          >
-            <path
-              d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
-            />
-          </svg>
-        </a>
-      </div>
+  <div class="py-8">
+    <Marquee theme="light" />
+  </div>
+</div>
+<!-- Social media banner -->
+<div class="p-dynamic grid h-32 w-full grid-cols-1 gap-6 bg-white dark:bg-gray-100 lg:grid-cols-2">
+  <div class="flex h-full items-center justify-center">
+    <div class="text-2xl font-bold uppercase text-secondary">Applications open {fmtdDate}!</div>
+  </div>
+  <div class="flex h-full items-center justify-center">
+    <div class="flex items-center gap-3">
+      <a
+        class="rounded-md border-2 border-black p-1"
+        href="https://www.facebook.com/hackharvard/"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <svg
+          class="h-7 w-7 text-black"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+        </svg>
+      </a>
+      <a
+        class="rounded-md border-2 border-black p-1"
+        href="https://www.instagram.com/hackharvardcollege/"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <svg
+          class="h-7 w-7 text-black"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+          <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+          <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+        </svg>
+      </a>
+      <a
+        class="rounded-md border-2 border-black p-1"
+        href="https://www.linkedin.com/company/hackharvardcollege/mycompany/"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <svg
+          class="h-7 w-7 text-black"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path
+            d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+          />
+          <rect x="2" y="9" width="4" height="12" />
+          <circle cx="4" cy="4" r="2" />
+        </svg>
+      </a>
+      <a
+        class="rounded-md border-2 border-black p-1"
+        href="mailto:team@hackharvard.io"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <svg
+          class="h-7 w-7 text-black"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+          <polyline points="22,6 12,13 2,6" />
+        </svg>
+      </a>
+      <a
+        class="rounded-md border-2 border-black p-1"
+        href="https://github.com/hackharvard"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <svg
+          class="h-7 w-7 text-black"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path
+            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+          />
+        </svg>
+      </a>
     </div>
   </div>
 </div>
 
 <style>
-  .bg-local-light {
-    background: radial-gradient(208.33% 121.31% at 14.48% 71.78%, #e63d3f 10.94%, #c0015d 89.58%);
+  .animate {
+    stroke-dasharray: 1;
+    stroke-dashoffset: 1;
   }
-  .font-outline {
-    -webkit-text-stroke: 1px white;
+  .animate.a {
+    animation: fire 0.8s linear alternate infinite;
+  }
+  .animate.b {
+    animation: fire 0.6s linear alternate infinite;
+  }
+  .animate.c {
+    animation: fire 0.7s linear alternate infinite;
+  }
+
+  @keyframes fire {
+    from {
+      stroke-dashoffset: 1;
+    }
+    to {
+      stroke-dashoffset: 0;
+    }
   }
 </style>

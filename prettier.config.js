@@ -1,4 +1,4 @@
 module.exports = {
-  tailwindFunctions: ['classNames'],
+  tailwindFunctions: ['classNames', 'clsx'],
   plugins: [require('prettier-plugin-tailwindcss')]
 }

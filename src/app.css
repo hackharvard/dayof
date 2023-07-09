@@ -4,6 +4,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  body {
+    @apply scroll-smooth bg-primary font-lexend text-secondary antialiased dark:bg-secondary dark:text-primary;
+  }
+}
+
 @layer utilities {
   .h-dynamic {
     height: calc(100vh - 5rem);
@@ -45,10 +51,12 @@
   .shadow-b {
     box-shadow: 0 1px 2px -1px rgb(0 0 0 / 0.1);
   }
-}
-
-body {
-  @apply scroll-smooth bg-primary font-lexend text-secondary antialiased dark:bg-secondary dark:text-primary;
+  .bg-landing-light {
+    background: radial-gradient(208.33% 121.31% at 14.48% 71.78%, #e63d3f 10.94%, #c0015d 89.58%);
+  }
+  .bg-landing-dark {
+    background: #170440;
+  }
 }
 
 .link {
