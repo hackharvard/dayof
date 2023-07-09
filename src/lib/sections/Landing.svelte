@@ -40,7 +40,7 @@
   })
 </script>
 
-<div class="h-dynamic flex flex-col" id="landing">
+<div class="h-dynamic flex flex-col" id="home">
   <div class="p-dynamic grow dark:bg-secondary-300 lg:grid lg:grid-cols-2">
     <div class="flex items-center justify-center">
       <div class="w-60 max-w-xl lg:w-full">

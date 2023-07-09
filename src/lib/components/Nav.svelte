@@ -18,6 +18,7 @@
     open = false
   }
   const pages = [
+    { name: 'Home', href: '#home' },
     {
       name: 'Welcome',
       href: '#welcome'
