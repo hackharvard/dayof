@@ -258,4 +258,9 @@
       stroke-dashoffset: 0;
     }
   }
+  @media (prefers-reduced-motion: reduce) {
+    .animate {
+      animation-play-state: paused;
+    }
+  }
 </style>
