@@ -48,7 +48,7 @@
 }
 
 body {
-  @apply scroll-smooth bg-primary font-lexend text-secondary antialiased dark:text-primary;
+  @apply scroll-smooth bg-primary font-lexend text-secondary antialiased dark:bg-secondary dark:text-primary;
 }
 
 .link {

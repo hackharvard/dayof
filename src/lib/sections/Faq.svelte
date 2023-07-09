@@ -1,4 +1,4 @@
-<div class="p-dynamic bg-faq-light bg-cover dark:bg-faq-dark">
+<div class="p-dynamic bg-faq-light bg-cover dark:bg-faq-dark" id="faq">
   <div class="p-dynamic rounded-md bg-white shadow-lg dark:bg-secondary">
     <div>
       <h1 class="text-5xl font-bold text-red-700">FAQ</h1>
@@ -51,4 +51,3 @@
     </div>
   </div>
 </div>
-

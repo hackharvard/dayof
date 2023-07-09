@@ -5,6 +5,7 @@
 
 <div
   class="py-dynamic space-y-4 bg-applications-light text-center dark:bg-applications-dark sm:space-y-8"
+  id="applications"
 >
   <h1 class="px-dynamic text-5xl font-bold text-violet-700 dark:text-white sm:text-6xl md:text-8xl">
     APPLICATIONS

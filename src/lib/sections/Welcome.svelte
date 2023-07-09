@@ -1,5 +1,6 @@
 <div
   class="relative mx-auto flex min-h-screen w-full flex-col items-center justify-center px-6 pb-[7.5rem] pt-[9.5rem]"
+  id="welcome"
 >
   <div
     class="dark:bg-welcome-dark absolute left-0 top-0 -z-10 h-full w-full bg-welcome-light bg-[length:cover,auto] bg-center bg-no-repeat"

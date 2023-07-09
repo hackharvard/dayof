@@ -22,10 +22,10 @@
       name: 'Welcome',
       href: '#welcome'
     },
-    {
-      name: 'Tracks',
-      href: '#tracks'
-    },
+    // {
+    //   name: 'Tracks',
+    //   href: '#tracks'
+    // },
     {
       name: 'Applications',
       href: '#applications'
@@ -56,7 +56,9 @@
 <nav
   class={classNames(
     'px-dynamic fixed left-0 top-0 z-50 flex h-20 w-full items-center justify-between border-b bg-primary transition-all dark:bg-secondary',
-    shadow && !open ? 'shadow-b border-gray-200' : 'border-white'
+    shadow && !open
+      ? 'shadow-b border-gray-200 dark:border-secondary'
+      : 'border-white dark:border-secondary'
   )}
 >
   <Brand />
@@ -75,7 +77,51 @@
           {page.name}
         </a>
       {/each}
-      <button type="button" on:click={handleTheme}> tmp </button>
+      <button class="ml-2 rounded-full p-1" type="button" on:click={handleTheme}>
+        {#if $theme === 'dark'}
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M17 18a5 5 0 0 0-10 0" />
+            <line x1="12" y1="2" x2="12" y2="9" />
+            <line x1="4.22" y1="10.22" x2="5.64" y2="11.64" />
+            <line x1="1" y1="18" x2="3" y2="18" />
+            <line x1="21" y1="18" x2="23" y2="18" />
+            <line x1="18.36" y1="11.64" x2="19.78" y2="10.22" />
+            <line x1="23" y1="22" x2="1" y2="22" />
+            <polyline points="8 6 12 2 16 6" />
+          </svg>
+        {:else}
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M17 18a5 5 0 0 0-10 0" />
+            <line x1="12" y1="9" x2="12" y2="2" />
+            <line x1="4.22" y1="10.22" x2="5.64" y2="11.64" />
+            <line x1="1" y1="18" x2="3" y2="18" />
+            <line x1="21" y1="18" x2="23" y2="18" />
+            <line x1="18.36" y1="11.64" x2="19.78" y2="10.22" />
+            <line x1="23" y1="22" x2="1" y2="22" />
+            <polyline points="16 5 12 9 8 5" />
+          </svg>
+        {/if}
+      </button>
     </div>
     <button
       class="sm:hidden"
@@ -112,19 +158,73 @@
 </nav>
 {#if open}
   <div
-    class="p-dynamic fixed left-0 top-20 z-50 flex h-[calc(100vh-5rem)] w-screen flex-col gap-2 bg-white sm:hidden"
+    class="p-dynamic fixed left-0 top-20 z-50 flex h-[calc(100vh-5rem)] w-screen flex-col gap-2 bg-primary dark:bg-secondary sm:hidden"
     transition:fade
   >
     {#each pages as page}
       <a
         class={classNames(
-          'rounded-md px-3 py-2 transition-colors',
-          hash === page.href ? 'bg-gray-200' : 'hover:bg-gray-100'
+          'rounded-md px-3 py-2 transition-all dark:shadow-secondary-100',
+          hash === page.href
+            ? 'bg-gray-200 dark:bg-secondary-200'
+            : 'hover:bg-gray-100 dark:hover:bg-secondary-100'
         )}
         href={page.href}
       >
         {page.name}
       </a>
     {/each}
+    <button
+      class="flex items-center gap-2 rounded-md px-3 py-2 transition-colors"
+      type="button"
+      on:click={handleTheme}
+    >
+      <span class="capitalize">
+        {$theme}
+      </span>
+      {#if $theme === 'dark'}
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path d="M17 18a5 5 0 0 0-10 0" />
+          <line x1="12" y1="2" x2="12" y2="9" />
+          <line x1="4.22" y1="10.22" x2="5.64" y2="11.64" />
+          <line x1="1" y1="18" x2="3" y2="18" />
+          <line x1="21" y1="18" x2="23" y2="18" />
+          <line x1="18.36" y1="11.64" x2="19.78" y2="10.22" />
+          <line x1="23" y1="22" x2="1" y2="22" />
+          <polyline points="8 6 12 2 16 6" />
+        </svg>
+      {:else}
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path d="M17 18a5 5 0 0 0-10 0" />
+          <line x1="12" y1="9" x2="12" y2="2" />
+          <line x1="4.22" y1="10.22" x2="5.64" y2="11.64" />
+          <line x1="1" y1="18" x2="3" y2="18" />
+          <line x1="21" y1="18" x2="23" y2="18" />
+          <line x1="18.36" y1="11.64" x2="19.78" y2="10.22" />
+          <line x1="23" y1="22" x2="1" y2="22" />
+          <polyline points="16 5 12 9 8 5" />
+        </svg>
+      {/if}
+    </button>
   </div>
 {/if}
