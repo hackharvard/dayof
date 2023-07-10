@@ -57,6 +57,9 @@
   .bg-landing-dark {
     background: #170440;
   }
+  .animate-pause {
+    animation-play-state: paused;
+  }
 }
 
 .link {

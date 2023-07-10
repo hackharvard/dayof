@@ -1,8 +1,8 @@
 <div class="p-dynamic bg-purple-100 dark:bg-secondary">
-  <h1 class="text-center text-7xl font-bold">TRACKS & PRIZES</h1>
+  <h1 class="text-center text-5xl font-bold uppercase sm:text-7xl">Tracks & Prizes</h1>
   <div class="mx-auto max-w-4xl sm:px-6 md:px-12">
     <div
-      class="mt-dynamic space-y-5 rounded-3xl bg-white p-8 shadow-2xl shadow-purple-400 transition-all duration-300 hover:shadow-purple-500"
+      class="mt-dynamic space-y-5 rounded-lg bg-white p-8 transition-all duration-300 hover:shadow-purple-500"
     >
       <div>
         <h3 class="text-2xl font-semibold text-red-700">What are tracks?</h3>

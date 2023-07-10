@@ -7,16 +7,18 @@
   // Countdown
   let countdown
   let remainingTime = { months: 0, days: 0, hours: 0, minutes: 0 }
-  const targetDate = new Date('2023-10-14T00:00:00Z').getTime()
+  const targetDate = new Date('2023-10-20T00:00:00Z').getTime()
   const fmtdDate = format(new Date('2023-10-14T00:00:00Z'), 'MMM d, yyyy')
   function updateCountdown() {
     const now = new Date().getTime()
     const difference = targetDate - now
     const tmp = {
-      months: Math.floor(difference / (1000 * 60 * 60 * 24 * 30)),
-      days: Math.floor((difference / (1000 * 60 * 60 * 24)) % 30),
+      // months: Math.floor(difference / (1000 * 60 * 60 * 24 * 30)),
+      // days: Math.floor((difference / (1000 * 60 * 60 * 24)) % 30),
+      days: Math.floor(difference / (1000 * 60 * 60 * 24)),
       hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
-      minutes: Math.floor((difference / (1000 * 60)) % 60)
+      minutes: Math.floor((difference / (1000 * 60)) % 60),
+      seconds: Math.floor((difference / 1000) % 60)
     }
     function conFormat(n) {
       if (n > 10) {
@@ -26,10 +28,10 @@
       }
     }
     remainingTime = {
-      months: conFormat(tmp.months),
       days: conFormat(tmp.days),
       hours: conFormat(tmp.hours),
-      minutes: conFormat(tmp.minutes)
+      minutes: conFormat(tmp.minutes),
+      seconds: conFormat(tmp.seconds)
     }
   }
   updateCountdown()
@@ -52,7 +54,7 @@
           class="h-full w-full object-cover"
         />
         <svg
-          class="absolute bottom-0 left-[3%] h-16 w-16 -rotate-[135deg] text-white opacity-70 lg:bottom-[7%] lg:left-[10%] lg:h-20 lg:w-20"
+          class="absolute bottom-[-6px] left-[2px] h-16 w-16 -rotate-[135deg] text-white opacity-70 lg:bottom-[28px] lg:left-[42px] lg:h-20 lg:w-20"
           xmlns="http://www.w3.org/2000/svg"
           width="24"
           height="24"
@@ -83,12 +85,8 @@
         <!-- Countdown  -->
         <div class="mt-10 flex items-center justify-center">
           <div
-            class="flex w-min gap-4 font-exo text-[5vw] font-bold text-white sm:text-2xl md:text-3xl lg:text-3xl"
+            class="flex w-min gap-4 text-center font-exo text-[5vw] font-bold text-white sm:text-2xl md:text-3xl lg:text-3xl"
           >
-            <div>
-              <div>{remainingTime.months}</div>
-              <div>MONTHS</div>
-            </div>
             <div>
               <div>{remainingTime.days}</div>
               <div>DAYS</div>
@@ -101,6 +99,10 @@
               <div>{remainingTime.minutes}</div>
               <div>MINUTES</div>
             </div>
+            <div>
+              <div>{remainingTime.seconds}</div>
+              <div>SECONDS</div>
+            </div>
           </div>
         </div>
       </div>
@@ -111,20 +113,20 @@
   </div>
 </div>
 <!-- Social media banner -->
-<div class="p-dynamic grid h-32 w-full grid-cols-1 gap-6 bg-white dark:bg-gray-100 lg:grid-cols-2">
+<div class="p-dynamic grid w-full grid-cols-1 gap-6 bg-white dark:bg-gray-100 lg:grid-cols-2">
   <div class="flex h-full items-center justify-center">
-    <div class="text-2xl font-bold uppercase text-secondary">Applications open {fmtdDate}!</div>
+    <div class="text-3xl font-bold uppercase text-secondary">Applications open {fmtdDate}!</div>
   </div>
   <div class="flex h-full items-center justify-center">
     <div class="flex items-center gap-3">
       <a
-        class="rounded-md border-2 border-black p-1"
+        class="rounded-md border-2 border-black p-2"
         href="https://www.facebook.com/hackharvard/"
         target="_blank"
         rel="noreferrer"
       >
         <svg
-          class="h-7 w-7 text-black"
+          class="h-8 w-8 text-black"
           xmlns="http://www.w3.org/2000/svg"
           width="24"
           height="24"
@@ -139,13 +141,13 @@
         </svg>
       </a>
       <a
-        class="rounded-md border-2 border-black p-1"
+        class="rounded-md border-2 border-black p-2"
         href="https://www.instagram.com/hackharvardcollege/"
         target="_blank"
         rel="noreferrer"
       >
         <svg
-          class="h-7 w-7 text-black"
+          class="h-8 w-8 text-black"
           xmlns="http://www.w3.org/2000/svg"
           width="24"
           height="24"
@@ -162,13 +164,13 @@
         </svg>
       </a>
       <a
-        class="rounded-md border-2 border-black p-1"
+        class="rounded-md border-2 border-black p-2"
         href="https://www.linkedin.com/company/hackharvardcollege/mycompany/"
         target="_blank"
         rel="noreferrer"
       >
         <svg
-          class="h-7 w-7 text-black"
+          class="h-8 w-8 text-black"
           xmlns="http://www.w3.org/2000/svg"
           width="24"
           height="24"
@@ -187,13 +189,13 @@
         </svg>
       </a>
       <a
-        class="rounded-md border-2 border-black p-1"
+        class="rounded-md border-2 border-black p-2"
         href="mailto:team@hackharvard.io"
         target="_blank"
         rel="noreferrer"
       >
         <svg
-          class="h-7 w-7 text-black"
+          class="h-8 w-8 text-black"
           xmlns="http://www.w3.org/2000/svg"
           width="24"
           height="24"
@@ -209,13 +211,13 @@
         </svg>
       </a>
       <a
-        class="rounded-md border-2 border-black p-1"
+        class="rounded-md border-2 border-black p-2"
         href="https://github.com/hackharvard"
         target="_blank"
         rel="noreferrer"
       >
         <svg
-          class="h-7 w-7 text-black"
+          class="h-8 w-8 text-black"
           xmlns="http://www.w3.org/2000/svg"
           width="24"
           height="24"

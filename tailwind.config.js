@@ -39,7 +39,7 @@ export default {
         red: colors.red
       },
       backgroundImage: {
-        // 'welcome-dark': "url('/images/sections/welcome-dark.jpg')",
+        'welcome-dark': "url('/images/sections/welcome-dark.jpg')",
         'welcome-light': "url('/images/sections/welcome-light.jpg')",
         'faq-light': "url('/images/sections/faq-light.jpg')",
         'faq-dark': "url('/images/sections/faq-dark.jpg')",

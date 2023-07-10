@@ -11,18 +11,14 @@
     theme === 'dark' && 'border-black text-black'
   )}
 >
-  <div class="marquee flex min-w-full shrink-0 justify-around gap-10">
-    <span>Apply today!</span>
-    <span>HackHarvard 2023!</span>
-    <span>Apply today!</span>
-    <span>HackHarvard 2023!</span>
-  </div>
-  <div class="marquee flex min-w-full shrink-0 justify-around gap-10">
-    <span>Apply today!</span>
-    <span>HackHarvard 2023!</span>
-    <span>Apply today!</span>
-    <span>HackHarvard 2023!</span>
-  </div>
+  {#each Array(2) as _}
+    <div class="marquee flex min-w-full shrink-0 justify-around gap-10">
+      <span>Apply today!</span>
+      <span>HackHarvard 2023!</span>
+      <span>Apply today!</span>
+      <span>HackHarvard 2023!</span>
+    </div>
+  {/each}
 </div>
 
 <style>
