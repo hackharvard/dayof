@@ -47,28 +47,12 @@
 <div class="bg-landing-light dark:bg-landing-dark" id="home">
   <div class="p-dynamic grow lg:grid lg:grid-cols-2">
     <div class="flex items-center justify-center">
-      <div class="relative w-60 max-w-xl lg:w-full">
+      <div class="w-60 max-w-xl lg:w-full">
         <img
           src={'images/rocket' + ($theme == 'dark' ? '-dark' : '-light') + '.png'}
           alt=""
-          class="h-full w-full object-cover"
+          class="turbulence h-full w-full object-cover"
         />
-        <svg
-          class="absolute bottom-[-6px] left-[2px] h-16 w-16 -rotate-[135deg] text-white opacity-70 lg:bottom-[28px] lg:left-[42px] lg:h-20 lg:w-20"
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        >
-          <line class="animate a" x1="18" y1="20" x2="18" y2="10" pathLength="1" />
-          <line class="animate b" x1="12" y1="20" x2="12" y2="4" pathLength="1" />
-          <line class="animate c" x1="6" y1="20" x2="6" y2="14" pathLength="1" />
-        </svg>
       </div>
     </div>
     <div class="mt-10 lg:mt-0">
@@ -238,7 +222,7 @@
 </div>
 
 <style>
-  .animate {
+  /* .animate {
     stroke-dasharray: 1;
     stroke-dashoffset: 1;
   }
@@ -251,7 +235,18 @@
   .animate.c {
     animation: fire 0.7s linear alternate infinite;
   }
-
+  */
+  .turbulence {
+    animation: turbulence 2s ease alternate infinite;
+  }
+  @keyframes turbulence {
+    from {
+      transform: translate(0, 0) rotate(4deg);
+    }
+    to {
+      transform: translate(1rem, 1rem) rotate(-4deg);
+    }
+  }
   @keyframes fire {
     from {
       stroke-dashoffset: 1;
