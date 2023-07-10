@@ -29,6 +29,6 @@
   "dependencies": {
     "clsx": "^1.2.1",
     "date-fns": "^2.30.0",
-    "lodash": "^4.17.21"
+    "lodash-es": "^4.17.21"
   }
 }

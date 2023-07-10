@@ -5,7 +5,7 @@
 <script>
   import clsx from 'clsx'
   import { onMount } from 'svelte'
-  import { uniqueId } from 'lodash'
+  import { uniqueId } from 'lodash-es'
   let className
   export { className as class }
 
