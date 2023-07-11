@@ -50,6 +50,14 @@
   function handleTheme() {
     theme.toggle()
   }
+
+  function scrollToSection(event, href) {
+    event.preventDefault()
+    const element = document.querySelector(href)
+    element.scrollIntoView({
+      behavior: 'smooth'
+    })
+  }
 </script>
 
 <svelte:window on:scroll={updateShadow} />
@@ -73,6 +81,7 @@
               : 'hover:bg-gray-100 dark:hover:bg-secondary-100'
           )}
           href={page.href}
+          on:click={event => scrollToSection(event, page.href)}
         >
           {page.name}
         </a>
@@ -170,6 +179,10 @@
             : 'hover:bg-gray-100 dark:hover:bg-secondary-100'
         )}
         href={page.href}
+        on:click={event => {
+          open = false
+          scrollToSection(event, page.href)
+        }}
       >
         {page.name}
       </a>
