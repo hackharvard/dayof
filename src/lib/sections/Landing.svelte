@@ -97,20 +97,22 @@
   </div>
 </div>
 <!-- Social media banner -->
-<div class="p-dynamic grid w-full grid-cols-1 gap-6 bg-white dark:bg-gray-100 lg:grid-cols-2">
+<div class="p-dynamic dark: bg-whit grid w-full grid-cols-1 gap-6 dark:bg-black lg:grid-cols-2">
   <div class="flex h-full items-center justify-center">
-    <div class="text-3xl font-bold uppercase text-secondary">Applications open in August!</div>
+    <div class="text-3xl font-bold uppercase text-secondary dark:text-white">
+      Applications open in August!
+    </div>
   </div>
   <div class="flex h-full items-center justify-center">
     <div class="flex items-center gap-3">
       <a
-        class="rounded-md border-2 border-black p-2"
+        class="rounded-md border-2 border-black p-2 dark:border-white"
         href="https://www.facebook.com/hackharvard/"
         target="_blank"
         rel="noreferrer"
       >
         <svg
-          class="h-8 w-8 text-black"
+          class="h-8 w-8 text-black dark:text-white"
           xmlns="http://www.w3.org/2000/svg"
           width="24"
           height="24"
@@ -125,13 +127,13 @@
         </svg>
       </a>
       <a
-        class="rounded-md border-2 border-black p-2"
+        class="rounded-md border-2 border-black p-2 dark:border-white"
         href="https://www.instagram.com/hackharvardcollege/"
         target="_blank"
         rel="noreferrer"
       >
         <svg
-          class="h-8 w-8 text-black"
+          class="h-8 w-8 text-black dark:text-white"
           xmlns="http://www.w3.org/2000/svg"
           width="24"
           height="24"
@@ -148,13 +150,13 @@
         </svg>
       </a>
       <a
-        class="rounded-md border-2 border-black p-2"
+        class="rounded-md border-2 border-black p-2 dark:border-white"
         href="https://www.linkedin.com/company/hackharvardcollege/mycompany/"
         target="_blank"
         rel="noreferrer"
       >
         <svg
-          class="h-8 w-8 text-black"
+          class="h-8 w-8 text-black dark:text-white"
           xmlns="http://www.w3.org/2000/svg"
           width="24"
           height="24"
@@ -173,13 +175,13 @@
         </svg>
       </a>
       <a
-        class="rounded-md border-2 border-black p-2"
+        class="rounded-md border-2 border-black p-2 dark:border-white"
         href="mailto:team@hackharvard.io"
         target="_blank"
         rel="noreferrer"
       >
         <svg
-          class="h-8 w-8 text-black"
+          class="h-8 w-8 text-black dark:text-white"
           xmlns="http://www.w3.org/2000/svg"
           width="24"
           height="24"
@@ -195,13 +197,13 @@
         </svg>
       </a>
       <a
-        class="rounded-md border-2 border-black p-2"
+        class="rounded-md border-2 border-black p-2 dark:border-white"
         href="https://github.com/hackharvard"
         target="_blank"
         rel="noreferrer"
       >
         <svg
-          class="h-8 w-8 text-black"
+          class="h-8 w-8 text-black dark:text-white"
           xmlns="http://www.w3.org/2000/svg"
           width="24"
           height="24"

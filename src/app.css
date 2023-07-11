@@ -66,8 +66,14 @@
   .bg-color-faq-dark {
     background: #170440;
   }
+  .bg-color-welcome-light {
+    background: #E4E8EC;
+  }
   .animate-pause {
     animation-play-state: paused;
+  }
+  .text-nav{
+    color: #C0015D;
   }
 }
 

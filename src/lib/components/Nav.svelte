@@ -18,9 +18,9 @@
     open = false
   }
   const pages = [
-    { name: 'Home', href: '#home' },
+    { name: 'HOME', href: '#home' },
     {
-      name: 'Welcome',
+      name: 'WELCOME',
       href: '#welcome'
     },
     // {
@@ -28,7 +28,7 @@
     //   href: '#tracks'
     // },
     {
-      name: 'Applications',
+      name: 'APPLICATIONS',
       href: '#applications'
     },
     {
@@ -36,11 +36,11 @@
       href: '#faq'
     },
     {
-      name: 'Speakers',
+      name: 'SPEAKERS',
       href: '#speakers'
     },
     {
-      name: 'Sponsors',
+      name: 'SPONSORS',
       href: '#sponsors'
     }
   ]
@@ -75,7 +75,7 @@
       {#each pages as page}
         <a
           class={classNames(
-            'rounded-md px-3 py-2 transition-all dark:shadow-sm dark:shadow-secondary-100',
+            'text-nav rounded-md px-3 py-2 transition-all dark:shadow-sm dark:shadow-secondary-100',
             hash === page.href
               ? 'bg-gray-200 dark:bg-secondary-200'
               : 'hover:bg-gray-100 dark:hover:bg-secondary-100'
