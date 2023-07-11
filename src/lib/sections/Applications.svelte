@@ -35,8 +35,8 @@
       />
       <div class="absolute bottom-0 left-0 right-0 top-0 flex items-center justify-center">
         <div class="font-bold uppercase text-white">
-          <div class="text-3xl md:text-4xl">Early</div>
-          <div class="text-2xl">Month DD</div>
+          <div class="text-3xl md:text-4xl">Early Deadline</div>
+          <div class="text-2xl">September 4th</div>
         </div>
       </div>
     </div>
@@ -50,8 +50,8 @@
       />
       <div class="absolute bottom-0 left-0 right-0 top-0 flex items-center justify-center">
         <div class="font-bold uppercase text-white">
-          <div class="text-3xl md:text-4xl">Regular</div>
-          <div class="text-2xl">Month DD</div>
+          <div class="text-3xl md:text-4xl">Regular Deadline</div>
+          <div class="text-2xl">October 2nd</div>
         </div>
       </div>
     </div>

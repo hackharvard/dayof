@@ -8,7 +8,7 @@
   let countdown
   let remainingTime = { months: 0, days: 0, hours: 0, minutes: 0 }
   const targetDate = new Date('2023-10-20T00:00:00Z').getTime()
-  const fmtdDate = format(new Date('2023-10-14T00:00:00Z'), 'MMM d, yyyy')
+  // const fmtdDate = format(new Date('2023-10-14T00:00:00Z'), 'MMM d, yyyy')
   function updateCountdown() {
     const now = new Date().getTime()
     const difference = targetDate - now
@@ -99,7 +99,7 @@
 <!-- Social media banner -->
 <div class="p-dynamic grid w-full grid-cols-1 gap-6 bg-white dark:bg-gray-100 lg:grid-cols-2">
   <div class="flex h-full items-center justify-center">
-    <div class="text-3xl font-bold uppercase text-secondary">Applications open {fmtdDate}!</div>
+    <div class="text-3xl font-bold uppercase text-secondary">Applications open in August!</div>
   </div>
   <div class="flex h-full items-center justify-center">
     <div class="flex items-center gap-3">
