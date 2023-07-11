@@ -16,6 +16,7 @@
   }
 
   onMount(() => {
+    document.title = 'HackHarvard 2023'
     if (typeof window !== 'undefined') {
       window.addEventListener('scroll', handleScroll)
     }

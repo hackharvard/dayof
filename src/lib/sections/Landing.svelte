@@ -92,7 +92,7 @@
       </div>
     </div>
   </div>
-  <div class="py-8">
+  <div class="pb-8">
     <Marquee theme="light" />
   </div>
 </div>
