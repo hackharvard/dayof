@@ -57,6 +57,15 @@
   .bg-landing-dark {
     background: #170440;
   }
+  .bg-color-applications-dark {
+    background: #000000;
+  }
+  .bg-color-faq-light {
+    background: #E4E8EC;
+  }
+  .bg-color-faq-dark {
+    background: #170440;
+  }
   .animate-pause {
     animation-play-state: paused;
   }

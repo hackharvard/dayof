@@ -41,10 +41,10 @@ export default {
       backgroundImage: {
         'welcome-dark': "url('/images/sections/welcome-dark.jpg')",
         'welcome-light': "url('/images/sections/welcome-light.jpg')",
-        'faq-light': "url('/images/sections/faq-light.jpg')",
-        'faq-dark': "url('/images/sections/faq-dark.jpg')",
+        'faq': "url('/images/sections/faq.svg')",
+        // 'faq-dark': "url('/images/sections/faq.svg')",
         'applications-light': "url('/images/sections/applications-light.jpg')",
-        'applications-dark': "url('/images/sections/applications-dark.jpg')"
+        'applications-dark': "url('/images/sections/applications-dark.svg')"
       }
     }
   },

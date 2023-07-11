@@ -3,55 +3,57 @@
   import { theme } from '$lib/stores'
 </script>
 
-<div
-  class="py-dynamic space-y-4 bg-applications-light text-center dark:bg-applications-dark sm:space-y-8"
-  id="applications"
->
-  <h1 class="px-dynamic text-5xl font-bold uppercase text-violet-700 dark:text-white sm:text-7xl">
-    APPLICATIONS
-  </h1>
-  <Marquee />
-  <a
-    class="pressable px-dynamic inline-block rounded-full bg-red-600 px-6 py-2 text-3xl font-bold uppercase text-white transition-colors before:bg-secondary hover:bg-red-500 sm:px-8 sm:py-3 sm:text-4xl md:px-10 md:py-4 md:text-6xl"
-    href="#applications"
+<div class="bg-color-applications-dark">
+  <div
+    class="py-dynamic space-y-4 bg-applications-light bg-cover text-center dark:bg-applications-dark sm:space-y-8"
+    id="applications"
   >
-    Apply!**
-  </a>
-  <div class="px-dynamic md:text-lg">
-    **Applications for HackHarvard 2023 will open in mid-August. Fill out <a
-      href="https://forms.gle/FyaEZ2Stqn1Zpezh7"
-      target="_blank"
-      class="text-red-600 transition-colors hover:text-green-400"
+    <h1 class="px-dynamic text-5xl font-bold uppercase text-violet-700 dark:text-white sm:text-7xl">
+      APPLICATIONS
+    </h1>
+    <Marquee />
+    <a
+      class="pressable px-dynamic inline-block rounded-full bg-red-600 px-6 py-2 text-3xl font-bold uppercase text-white transition-colors before:bg-secondary hover:bg-red-500 sm:px-8 sm:py-3 sm:text-4xl md:px-10 md:py-4 md:text-6xl"
+      href="#applications"
     >
-      this form
-    </a> if you want to be notified when applications open.
-  </div>
-  <div class="px-dynamic flex justify-center">
-    <div class="relative">
-      <img
-        class="h-40 max-h-48 object-fill sm:h-full"
-        src={'images/arrows/left' + ($theme == 'dark' ? '-dark' : '-light') + '.png'}
-        alt=""
-      />
-      <div class="absolute bottom-0 left-0 right-0 top-0 flex items-center justify-center">
-        <div class="font-bold uppercase text-white">
-          <div class="text-3xl md:text-4xl">Early Deadline</div>
-          <div class="text-2xl">September 4th</div>
+      Apply!**
+    </a>
+    <div class="px-dynamic md:text-lg">
+      **Applications for HackHarvard 2023 will open in mid-August. Fill out <a
+        href="https://forms.gle/FyaEZ2Stqn1Zpezh7"
+        target="_blank"
+        class="text-red-600 transition-colors hover:text-green-400"
+      >
+        this form
+      </a> if you want to be notified when applications open.
+    </div>
+    <div class="px-dynamic flex justify-center">
+      <div class="relative">
+        <img
+          class="h-40 max-h-48 object-fill sm:h-full"
+          src={'images/arrows/left' + ($theme == 'dark' ? '-dark' : '-light') + '.png'}
+          alt=""
+        />
+        <div class="absolute bottom-0 left-0 right-0 top-0 flex items-center justify-center">
+          <div class="font-bold uppercase text-white">
+            <div class="text-3xl md:text-4xl">Early Deadline</div>
+            <div class="text-2xl">September 4th</div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="px-dynamic flex justify-center">
-    <div class="relative">
-      <img
-        class="h-40 max-h-48 object-fill sm:h-full"
-        src={'images/arrows/right' + ($theme == 'dark' ? '-dark' : '-light') + '.png'}
-        alt=""
-      />
-      <div class="absolute bottom-0 left-0 right-0 top-0 flex items-center justify-center">
-        <div class="font-bold uppercase text-white">
-          <div class="text-3xl md:text-4xl">Regular Deadline</div>
-          <div class="text-2xl">October 2nd</div>
+    <div class="px-dynamic flex justify-center">
+      <div class="relative">
+        <img
+          class="h-40 max-h-48 object-fill sm:h-full"
+          src={'images/arrows/right' + ($theme == 'dark' ? '-dark' : '-light') + '.png'}
+          alt=""
+        />
+        <div class="absolute bottom-0 left-0 right-0 top-0 flex items-center justify-center">
+          <div class="font-bold uppercase text-white">
+            <div class="text-3xl md:text-4xl">Regular Deadline</div>
+            <div class="text-2xl">October 2nd</div>
+          </div>
         </div>
       </div>
     </div>
