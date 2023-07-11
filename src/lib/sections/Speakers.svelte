@@ -19,7 +19,10 @@
 
 <div class="py-dynamic bg-purple-100 dark:bg-secondary" id="speakers">
   <h1 class="text-center text-5xl font-bold uppercase sm:text-7xl">Speakers</h1>
-  <div class="px-dynamic mt-10 flex items-center justify-center">
+  <p class="mt-5 text-center">
+    If you’re interested in being a speaker for HackHarvard, please email us at team@hackharvard.io!
+  </p>
+  <!-- <div class="px-dynamic mt-10 flex items-center justify-center">
     <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 sm:gap-8 md:grid-cols-3 lg:grid-cols-4">
       {#each speakers as speaker}
         <Modal class="overflow-hidden rounded-md transition-transform hover:scale-[1.05]" {speaker}>
@@ -35,5 +38,5 @@
         </Modal>
       {/each}
     </div>
-  </div>
+  </div> -->
 </div>

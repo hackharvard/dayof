@@ -9,7 +9,10 @@
 
 <div class="py-dynamic bg-purple-100 dark:bg-secondary" id="sponsors">
   <h1 class="text-center text-5xl font-bold uppercase sm:text-7xl">Sponsors</h1>
-  <div class="px-dynamic mt-10 flex items-center justify-center">
+  <p class="mt-5 text-center">
+    Interested in becoming a sponsor? Please email us at sponsors@hackharvard.io
+  </p>
+  <!-- <div class="px-dynamic mt-10 flex items-center justify-center">
     <div class="w-full max-w-5xl space-y-8 rounded-lg p-8">
       <div>
         <h1 class="flex items-center gap-3 text-3xl font-bold sm:text-4xl md:gap-4 md:text-5xl">
@@ -124,5 +127,5 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 </div>
