@@ -2,6 +2,14 @@
   import '../app.css'
   import Footer from '$lib/components/Footer.svelte'
   import Nav from '$lib/components/Nav.svelte'
+  import { theme } from '$lib/stores'
+  import { onMount } from 'svelte'
+
+  let ready = false
+  onMount(() => {
+    theme.toggle()
+    ready = true
+  })
 
   let prevScrollPos = 0
   let showNav = true
@@ -19,9 +27,11 @@
 
 <svelte:window on:scroll={handleScroll} />
 
-{#if showNav}
-  <Nav />
-{/if}
+{#if ready}
+  {#if showNav}
+    <Nav />
+  {/if}
 
-<slot />
-<Footer />
+  <slot />
+  <Footer />
+{/if}
