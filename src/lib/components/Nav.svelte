@@ -75,7 +75,7 @@
       {#each pages as page}
         <a
           class={classNames(
-            'text-nav rounded-md px-3 py-2 transition-all dark:shadow-sm dark:shadow-secondary-100',
+            'rounded-md px-3 py-2 text-pink-700 transition-all dark:shadow-sm dark:shadow-secondary-100',
             hash === page.href
               ? 'bg-gray-200 dark:bg-secondary-200'
               : 'hover:bg-gray-100 dark:hover:bg-secondary-100'

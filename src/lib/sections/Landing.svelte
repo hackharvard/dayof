@@ -97,7 +97,7 @@
   </div>
 </div>
 <!-- Social media banner -->
-<div class="p-dynamic dark: bg-whit grid w-full grid-cols-1 gap-6 dark:bg-black lg:grid-cols-2">
+<div class="p-dynamic grid w-full grid-cols-1 gap-6 dark:bg-black lg:grid-cols-2">
   <div class="flex h-full items-center justify-center">
     <div class="text-3xl font-bold uppercase text-secondary dark:text-white">
       Applications open in August!

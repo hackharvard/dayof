@@ -1,32 +1,23 @@
 <script>
-  import { onMount } from 'svelte'
-
   import '../app.css'
   import Footer from '$lib/components/Footer.svelte'
   import Nav from '$lib/components/Nav.svelte'
-  import { slide } from 'svelte/transition'
 
   let prevScrollPos = 0
   let showNav = true
 
   function handleScroll() {
-    const currentScrollPos = window.pageYOffset
+    const currentScrollPos = window.scrollY
     showNav = prevScrollPos > currentScrollPos
     prevScrollPos = currentScrollPos
   }
-
-  onMount(() => {
-    document.title = 'HackHarvard 2023'
-    if (typeof window !== 'undefined') {
-      window.addEventListener('scroll', handleScroll)
-    }
-    return () => {
-      if (typeof window !== 'undefined') {
-        window.removeEventListener('scroll', handleScroll)
-      }
-    }
-  })
 </script>
+
+<svelte:head>
+  <title>HackHarvard 2023</title>
+</svelte:head>
+
+<svelte:window on:scroll={handleScroll} />
 
 {#if showNav}
   <Nav />
