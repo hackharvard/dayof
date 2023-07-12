@@ -57,14 +57,8 @@
   .bg-landing-dark {
     background: #170440;
   }
-  .bg-color-faq-light {
-    background: #E4E8EC;
-  }
-  .bg-color-faq-dark {
-    background: #170440;
-  }
   .bg-color-welcome-light {
-    background: #E4E8EC;
+    @apply bg-red-500;
   }
   .animate-pause {
     animation-play-state: paused;

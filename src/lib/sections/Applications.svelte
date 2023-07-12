@@ -3,7 +3,7 @@
   import { theme } from '$lib/stores'
 </script>
 
-<div class="bg-black">
+<div class="bg-purple-100 dark:bg-black">
   <div
     class="py-dynamic space-y-4 bg-applications-light bg-cover text-center dark:bg-applications-dark sm:space-y-8"
     id="applications"

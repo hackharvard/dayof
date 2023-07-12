@@ -43,7 +43,7 @@ export default {
         'welcome-light': "url('/images/sections/welcome-light.svg')",
         'faq': "url('/images/sections/faq.svg')",
         // 'faq-dark': "url('/images/sections/faq.svg')",
-        'applications-light': "url('/images/sections/applications-light.jpg')",
+        'applications-light': "url('/images/sections/applications-light.svg')",
         'applications-dark': "url('/images/sections/applications-dark.svg')"
       }
     }

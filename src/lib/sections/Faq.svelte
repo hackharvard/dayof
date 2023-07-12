@@ -2,9 +2,9 @@
   import Disclosure from '../components/Disclosure.svelte'
 </script>
 
-<div class="p-dynamic bg-color flex justify-center bg-faq bg-cover" id="faq">
-  <div class="bg-color-faq-light dark:bg-color-faq-dark">
-    <div class="w-full max-w-3xl rounded-lg bg-white p-8 shadow-lg dark:bg-secondary">
+<div class="bg-purple-100 dark:bg-secondary">
+  <div class="p-dynamic bg-color flex justify-center bg-faq bg-cover" id="faq">
+    <div class="w-full max-w-3xl rounded-lg bg-white p-8 shadow-lg dark:bg-black">
       <div>
         <h1 class="text-5xl font-bold uppercase text-red-700 sm:text-7xl">FAQ</h1>
         <p class="mt-5 font-bold text-blue-700 dark:text-blue-200">
