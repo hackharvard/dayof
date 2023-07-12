@@ -6,7 +6,7 @@
   <div class="p-dynamic bg-color flex justify-center bg-faq bg-cover" id="faq">
     <div class="w-full max-w-3xl rounded-lg bg-white p-8 shadow-lg dark:bg-black">
       <div>
-        <h1 class="text-5xl font-bold uppercase text-red-700 sm:text-7xl">FAQ</h1>
+        <h1 class="font-exo text-5xl uppercase text-red-700 sm:text-7xl">FAQ</h1>
         <p class="mt-5 font-bold text-blue-700 dark:text-blue-200">
           What if my question is not here?
         </p>
@@ -19,7 +19,7 @@
       </div>
       <div class="mt-8 space-y-8">
         <div class="space-y-6">
-          <h3 class="text-3xl font-bold text-red-700 sm:text-4xl md:text-5xl">GENERAL</h3>
+          <h3 class="font-exo text-3xl text-red-700 sm:text-4xl md:text-5xl">GENERAL</h3>
           <Disclosure>
             <svelte:fragment slot="title">What is HackHarvard?</svelte:fragment>
             <svelte:fragment slot="content">
@@ -93,7 +93,7 @@
           </Disclosure>
         </div>
         <div class="space-y-6">
-          <h3 class="text-3xl font-bold text-red-700 sm:text-4xl md:text-5xl">APPLY</h3>
+          <h3 class="font-exo text-3xl text-red-700 sm:text-4xl md:text-5xl">APPLY</h3>
           <Disclosure>
             <svelte:fragment slot="title">When is the application deadline?</svelte:fragment>
             <svelte:fragment slot="content">
@@ -111,7 +111,7 @@
           </Disclosure>
         </div>
         <div class="space-y-6">
-          <h3 class="text-3xl font-bold text-red-700 sm:text-4xl md:text-5xl">TEAMS</h3>
+          <h3 class="font-exo text-3xl text-red-700 sm:text-4xl md:text-5xl">TEAMS</h3>
           <Disclosure>
             <svelte:fragment slot="title">What if I don't have a team?</svelte:fragment>
             <svelte:fragment slot="content">
@@ -130,7 +130,7 @@
           </Disclosure>
         </div>
         <div class="space-y-6">
-          <h3 class="text-3xl font-bold uppercase text-red-700 sm:text-4xl md:text-5xl">
+          <h3 class="font-exo text-3xl uppercase text-red-700 sm:text-4xl md:text-5xl">
             Hackathon
           </h3>
           <Disclosure>

@@ -59,11 +59,14 @@
       <div class="flex h-full flex-col items-center justify-center">
         <!-- Placeholder HackHarvard text -->
         <div class="max-w-xl">
-          <img
+          <p class="landing-text-light dark:landing-text-dark text-center font-lexend text-8xl">
+            HackHarvard 2023
+          </p>
+          <!-- <img
             class="h-full w-full object-cover"
             src={'images/title' + ($theme == 'dark' ? '-dark' : '-light') + '.png'}
             alt=""
-          />
+          /> -->
         </div>
 
         <!-- Countdown  -->

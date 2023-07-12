@@ -6,8 +6,12 @@ export default {
   darkMode: 'class',
   theme: {
     fontFamily: {
-      lexend: ['Lexend', 'sans-serif'],
-      exo: ['Exo', 'sans-serif']
+      lato: ['Lato', 'sans-serif'],
+      exo: ['Exo', 'sans-serif'],
+      lexend: [
+        'Lexend',
+        'sans-serif',
+      ]
     },
     extend: {
       colors: {

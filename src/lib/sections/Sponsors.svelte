@@ -8,7 +8,7 @@
 </script>
 
 <div class="py-dynamic bg-purple-100 dark:bg-secondary" id="sponsors">
-  <h1 class="text-center text-5xl font-bold uppercase sm:text-7xl">Sponsors</h1>
+  <h1 class="text-center font-exo text-5xl font-bold uppercase sm:text-7xl">Sponsors</h1>
   <p class="mt-5 text-center">
     Interested in becoming a sponsor? Please email us at sponsors@hackharvard.io!
   </p>
