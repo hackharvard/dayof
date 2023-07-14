@@ -49,7 +49,7 @@
     <div class="flex items-center justify-center">
       <div class="w-60 max-w-xl lg:w-full">
         <img
-          src={'images/rocket' + ($theme == 'dark' ? '-dark' : '-light') + '.png'}
+          src={'images/rocket' + ($theme == 'dark' ? '-dark' : '-light') + '.svg'}
           alt=""
           class="turbulence h-full w-full object-cover"
         />
@@ -64,11 +64,6 @@
           >
             HackHarvard 2023
           </p>
-          <!-- <img
-            class="h-full w-full object-cover"
-            src={'images/title' + ($theme == 'dark' ? '-dark' : '-light') + '.png'}
-            alt=""
-          /> -->
         </div>
 
         <!-- Countdown  -->
