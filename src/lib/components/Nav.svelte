@@ -6,6 +6,7 @@
   import { navigating } from '$app/stores'
   import { fade } from 'svelte/transition'
   import { theme } from '$lib/stores'
+  import { slide } from 'svelte/transition'
 
   onMount(() => {
     updateShadow()
@@ -66,6 +67,7 @@
 
 <svelte:window on:scroll={updateShadow} />
 <nav
+  transition:slide={{ x: 0, y: -100, duration: 300 }}
   class={classNames(
     'px-dynamic fixed left-0 top-0 z-50 flex h-20 w-full items-center justify-between border-b bg-primary transition-all dark:bg-secondary',
     shadow && !open
