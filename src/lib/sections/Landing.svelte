@@ -44,7 +44,7 @@
   })
 </script>
 
-<div class="bg-landing-light dark:bg-landing-dark" id="home">
+<div class="bg-landing-light dark:bg-landing-dark min-h-screen" id="home">
   <div class="px-dynamic grow pb-5 lg:grid lg:grid-cols-2">
     <div class="flex items-center justify-center">
       <div class="w-60 max-w-xl lg:w-full">
@@ -89,7 +89,7 @@
             </div>
           </div>
         </div>
-        <div class="mt-10 text-3xl font-bold uppercase text-white">
+        <div class="mt-10 text-center text-3xl font-bold uppercase text-white">
           Applications open in August!
         </div>
       </div>
