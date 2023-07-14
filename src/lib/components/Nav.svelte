@@ -71,7 +71,7 @@
 >
   <Brand />
   <div class="flex items-center">
-    <div class="hidden items-center gap-2 md:flex">
+    <div class="hidden items-center gap-2 lg:flex">
       {#each pages as page}
         <a
           class={classNames(
@@ -133,7 +133,7 @@
       </button>
     </div>
     <button
-      class="sm:hidden"
+      class="lg:hidden"
       type="button"
       on:click={() => {
         open = !open
@@ -167,7 +167,7 @@
 </nav>
 {#if open}
   <div
-    class="p-dynamic fixed left-0 top-20 z-50 flex h-[calc(100vh-5rem)] w-screen flex-col gap-2 bg-primary dark:bg-secondary sm:hidden"
+    class="p-dynamic fixed left-0 top-20 z-50 flex h-[calc(100vh-5rem)] w-screen flex-col gap-2 bg-primary dark:bg-secondary lg:hidden"
     transition:fade
   >
     {#each pages as page}
