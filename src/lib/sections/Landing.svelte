@@ -45,7 +45,7 @@
 </script>
 
 <div class="bg-landing-light dark:bg-landing-dark min-h-screen" id="home">
-  <div class="px-dynamic grow pb-5 lg:grid lg:grid-cols-2">
+  <div class="px-dynamic grow pb-8 pt-5 lg:grid lg:grid-cols-2">
     <div class="flex items-center justify-center">
       <div class="w-60 max-w-xl lg:w-full">
         <img
