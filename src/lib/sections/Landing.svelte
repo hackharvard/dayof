@@ -59,7 +59,9 @@
       <div class="flex h-full flex-col items-center justify-center">
         <!-- Placeholder HackHarvard text -->
         <div class="max-w-xl">
-          <p class="landing-text-light dark:landing-text-dark text-center font-lexend text-8xl">
+          <p
+            class="landing-text-light dark:landing-text-dark text-center font-lexend text-5xl md:text-6xl xl:text-8xl"
+          >
             HackHarvard 2023
           </p>
           <!-- <img
