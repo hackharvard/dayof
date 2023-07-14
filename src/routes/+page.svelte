@@ -6,6 +6,7 @@
   import Tracks from '$lib/sections/Tracks.svelte'
   import Welcome from '$lib/sections/Welcome.svelte'
   import Sponsors from '$lib/sections/Sponsors.svelte'
+  import Hype from '../lib/sections/Hype.svelte'
 </script>
 
 <main class="mt-20">
@@ -14,6 +15,7 @@
   <Tracks />
   <Applications />
   <Faq />
+  <Hype />
   <Speakers />
   <Sponsors />
 </main>

@@ -36,6 +36,10 @@
       href: '#faq'
     },
     {
+      name: 'HYPE',
+      href: '#hype'
+    },
+    {
       name: 'SPEAKERS',
       href: '#speakers'
     },
