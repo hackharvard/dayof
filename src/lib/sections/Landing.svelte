@@ -62,8 +62,9 @@
           <p
             class="landing-text-light dark:landing-text-dark text-center font-lexend text-5xl md:text-6xl xl:text-8xl"
           >
-            HackHarvard 2023
+            HackHarvard
           </p>
+          <p class="mt-10 text-center font-exo text-4xl text-white">October 20-22, 2023</p>
         </div>
 
         <!-- Countdown  -->

@@ -98,7 +98,7 @@
             <svelte:fragment slot="title">When is the application deadline?</svelte:fragment>
             <svelte:fragment slot="content">
               The early application deadline is September 4th, 2023. The regular application
-              deadline is October 2nd, 2023.
+              deadline is September 25th, 2023.
             </svelte:fragment>
           </Disclosure>
           <Disclosure>

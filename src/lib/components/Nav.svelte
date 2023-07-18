@@ -20,18 +20,18 @@
   }
   const pages = [
     { name: 'HOME', href: '#home' },
-    {
-      name: 'WELCOME',
-      href: '#welcome'
-    },
+    // {
+    //   name: 'WELCOME',
+    //   href: '#welcome'
+    // },
     // {
     //   name: 'Tracks',
     //   href: '#tracks'
     // },
-    {
-      name: 'APPLICATIONS',
-      href: '#applications'
-    },
+    // {
+    //   name: 'APPLICATIONS',
+    //   href: '#applications'
+    // },
     {
       name: 'FAQ',
       href: '#faq'
@@ -40,10 +40,10 @@
       name: 'HYPE',
       href: '#hype'
     },
-    {
-      name: 'SPEAKERS',
-      href: '#speakers'
-    },
+    // {
+    //   name: 'SPEAKERS',
+    //   href: '#speakers'
+    // },
     {
       name: 'SPONSORS',
       href: '#sponsors'
@@ -92,6 +92,15 @@
           {page.name}
         </a>
       {/each}
+      <a
+        class="ml-2 rounded-full bg-pink-700 p-2 px-4 text-white"
+        type="button"
+        href="#applications"
+        on:click={event => scrollToSection(event, '#applications')}
+      >
+        APPLY
+      </a>
+
       <button class="ml-2 rounded-full p-1" type="button" on:click={handleTheme}>
         {#if $theme === 'dark'}
           <svg
@@ -193,6 +202,16 @@
         {page.name}
       </a>
     {/each}
+
+    <a
+      class="ml-2 rounded-full bg-pink-700 p-2 px-4 text-white"
+      type="button"
+      href="#applications"
+      on:click={event => scrollToSection(event, '#applications')}
+    >
+      APPLY
+    </a>
+
     <button
       class="flex items-center gap-2 rounded-md px-3 py-2 transition-colors"
       type="button"

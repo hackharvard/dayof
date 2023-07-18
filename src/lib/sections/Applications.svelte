@@ -52,7 +52,7 @@
         <div class="absolute bottom-0 left-0 right-0 top-0 flex items-center justify-center">
           <div class="font-exo uppercase text-white">
             <div class="text-3xl md:text-4xl">Regular Deadline</div>
-            <div class="text-2xl">October 2nd</div>
+            <div class="text-2xl">September 25th</div>
           </div>
         </div>
       </div>
