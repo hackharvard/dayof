@@ -23,6 +23,16 @@
 
 <svelte:head>
   <title>HackHarvard 2023</title>
+  <meta property="og:title" content="HackHarvard 2023" />
+  <meta
+    property="og:description"
+    content="Join us for the eighth iteration of HackHarvard, an exhilarating 36-hour free undergraduate hackathon hosted at Harvard University."
+  />
+  <meta
+    property="og:image"
+    content="https://github.com/hackharvard/branding/blob/improve-UI/static/logo.svg"
+  />
+  <meta property="og:type" content="website" />
 </svelte:head>
 
 <svelte:window on:scroll={handleScroll} />
