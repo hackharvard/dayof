@@ -21,20 +21,6 @@
   }
 </script>
 
-<svelte:head>
-  <title>HackHarvard 2023</title>
-  <meta property="og:title" content="HackHarvard 2023" />
-  <meta
-    property="og:description"
-    content="Join us for the eighth iteration of HackHarvard, an exhilarating 36-hour free undergraduate hackathon hosted at Harvard University."
-  />
-  <meta
-    property="og:image"
-    content="https://raw.githubusercontent.com/hackharvard/branding/78c3354fe5237280aa4a52c4100c6fd0d0279600/static/logo.svg"
-  />
-  <meta property="og:type" content="website" />
-</svelte:head>
-
 <svelte:window on:scroll={handleScroll} />
 
 {#if ready}
