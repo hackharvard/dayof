@@ -30,7 +30,7 @@
   />
   <meta
     property="og:image"
-    content="https://github.com/hackharvard/branding/blob/improve-UI/static/logo.svg"
+    content="https://raw.githubusercontent.com/hackharvard/branding/78c3354fe5237280aa4a52c4100c6fd0d0279600/static/logo.svg"
   />
   <meta property="og:type" content="website" />
 </svelte:head>
