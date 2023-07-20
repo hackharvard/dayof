@@ -154,6 +154,19 @@
               No, you can submit a project that is unrelated to the tracks provided.
             </svelte:fragment>
           </Disclosure>
+          <Disclosure>
+            <svelte:fragment slot="title">Is there a code of conduct?</svelte:fragment>
+            <svelte:fragment slot="content">
+              All participants are expected to follow the <a
+                href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="link"
+                >MLH Code of Conduct
+              </a>
+              throughout the duration of the conference.
+            </svelte:fragment>
+          </Disclosure>
         </div>
       </div>
     </div>
