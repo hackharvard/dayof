@@ -20,7 +20,10 @@
 <div class="py-dynamic bg-purple-100 dark:bg-secondary" id="speakers">
   <h1 class="text-center font-exo text-5xl font-bold uppercase sm:text-7xl">Speakers</h1>
   <p class="mt-5 text-center">
-    If you’re interested in being a speaker for HackHarvard, please email us at team@hackharvard.io!
+    If you’re interested in being a speaker for HackHarvard, please email us at <a
+      class="link"
+      href="mailto:team@hackharvard.io">team@hackharvard.io!</a
+    >
   </p>
   <!-- <div class="px-dynamic mt-10 flex items-center justify-center">
     <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 sm:gap-8 md:grid-cols-3 lg:grid-cols-4">

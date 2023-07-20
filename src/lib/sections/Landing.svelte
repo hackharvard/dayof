@@ -64,6 +64,11 @@
           >
             HackHarvard
           </p>
+          <p class="mt-5 text-center font-exo text-2xl text-white">
+            <a href="https://tryterra.co/" target="_blank" rel="noopener noreferrer" class="link"
+              >Powered by TerraAPI</a
+            >
+          </p>
           <p class="mt-10 text-center font-exo text-4xl text-white">October 20-22, 2023</p>
         </div>
 
