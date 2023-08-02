@@ -8,8 +8,24 @@
 </script>
 
 <div class="py-dynamic bg-purple-100 dark:bg-secondary" id="sponsors">
-  <h1 class="text-center text-5xl font-bold uppercase sm:text-7xl">Sponsors</h1>
-  <div class="px-dynamic mt-10 flex items-center justify-center">
+  <h1 class="text-center font-exo text-5xl font-bold uppercase sm:text-7xl">Sponsors</h1>
+  <a href="https://tryterra.co/" target="_blank" rel="noopener noreferrer">
+    <div class="m-5 flex items-center justify-center">
+      <img
+        class="h-1/2 w-8/12 object-cover dark:rounded-2xl dark:bg-white"
+        src="images/sponsors/terra_api.png"
+        alt="TerraAPI"
+      />
+    </div>
+  </a>
+
+  <p class="mt-5 text-center">
+    Interested in becoming a sponsor? Please email us at <a
+      class="link"
+      href="mailto:sponsors@hackharvard.io">sponsors@hackharvard.io!</a
+    >
+  </p>
+  <!-- <div class="px-dynamic mt-10 flex items-center justify-center">
     <div class="w-full max-w-5xl space-y-8 rounded-lg p-8">
       <div>
         <h1 class="flex items-center gap-3 text-3xl font-bold sm:text-4xl md:gap-4 md:text-5xl">
@@ -124,5 +140,5 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 </div>

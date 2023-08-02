@@ -6,6 +6,8 @@
   import clsx from 'clsx'
   import { onMount } from 'svelte'
   import { uniqueId } from 'lodash-es'
+  import { slide } from 'svelte/transition'
+
   let className
   export { className as class }
 
@@ -56,7 +58,7 @@
   </button>
 
   {#if openState}
-    <div class="p-3 text-lg md:text-xl">
+    <div class="p-3 text-lg md:text-xl" transition:slide={{ x: 0, y: -100, duration: 300 }}>
       <slot name="content" />
     </div>
   {/if}

@@ -6,6 +6,7 @@
   import { navigating } from '$app/stores'
   import { fade } from 'svelte/transition'
   import { theme } from '$lib/stores'
+  import { slide } from 'svelte/transition'
 
   onMount(() => {
     updateShadow()
@@ -18,29 +19,33 @@
     open = false
   }
   const pages = [
-    { name: 'Home', href: '#home' },
-    {
-      name: 'Welcome',
-      href: '#welcome'
-    },
+    { name: 'HOME', href: '#home' },
+    // {
+    //   name: 'WELCOME',
+    //   href: '#welcome'
+    // },
     // {
     //   name: 'Tracks',
     //   href: '#tracks'
     // },
-    {
-      name: 'Applications',
-      href: '#applications'
-    },
+    // {
+    //   name: 'APPLICATIONS',
+    //   href: '#applications'
+    // },
     {
       name: 'FAQ',
       href: '#faq'
     },
     {
-      name: 'Speakers',
-      href: '#speakers'
+      name: 'HYPE',
+      href: '#hype'
     },
+    // {
+    //   name: 'SPEAKERS',
+    //   href: '#speakers'
+    // },
     {
-      name: 'Sponsors',
+      name: 'SPONSORS',
       href: '#sponsors'
     }
   ]
@@ -50,10 +55,19 @@
   function handleTheme() {
     theme.toggle()
   }
+
+  function scrollToSection(event, href) {
+    event.preventDefault()
+    const element = document.querySelector(href)
+    element.scrollIntoView({
+      behavior: 'smooth'
+    })
+  }
 </script>
 
 <svelte:window on:scroll={updateShadow} />
 <nav
+  transition:slide={{ x: 0, y: -100, duration: 300 }}
   class={classNames(
     'px-dynamic fixed left-0 top-0 z-50 flex h-20 w-full items-center justify-between border-b bg-primary transition-all dark:bg-secondary',
     shadow && !open
@@ -63,20 +77,30 @@
 >
   <Brand />
   <div class="flex items-center">
-    <div class="hidden items-center gap-2 md:flex">
+    <div class="hidden items-center gap-2 lg:flex">
       {#each pages as page}
         <a
           class={classNames(
-            'rounded-md px-3 py-2 transition-all dark:shadow-sm dark:shadow-secondary-100',
+            'rounded-md px-3 py-2 text-pink-700 transition-all dark:shadow-sm dark:shadow-secondary-100',
             hash === page.href
               ? 'bg-gray-200 dark:bg-secondary-200'
               : 'hover:bg-gray-100 dark:hover:bg-secondary-100'
           )}
           href={page.href}
+          on:click={event => scrollToSection(event, page.href)}
         >
           {page.name}
         </a>
       {/each}
+      <a
+        class="ml-2 rounded-full bg-pink-700 p-2 px-4 text-white"
+        type="button"
+        href="#applications"
+        on:click={event => scrollToSection(event, '#applications')}
+      >
+        APPLY
+      </a>
+
       <button class="ml-2 rounded-full p-1" type="button" on:click={handleTheme}>
         {#if $theme === 'dark'}
           <svg
@@ -124,7 +148,7 @@
       </button>
     </div>
     <button
-      class="sm:hidden"
+      class="lg:hidden"
       type="button"
       on:click={() => {
         open = !open
@@ -158,7 +182,7 @@
 </nav>
 {#if open}
   <div
-    class="p-dynamic fixed left-0 top-20 z-50 flex h-[calc(100vh-5rem)] w-screen flex-col gap-2 bg-primary dark:bg-secondary sm:hidden"
+    class="p-dynamic fixed left-0 top-20 z-50 flex h-[calc(100vh-5rem)] w-screen flex-col gap-2 bg-primary dark:bg-secondary lg:hidden"
     transition:fade
   >
     {#each pages as page}
@@ -170,10 +194,24 @@
             : 'hover:bg-gray-100 dark:hover:bg-secondary-100'
         )}
         href={page.href}
+        on:click={event => {
+          open = false
+          scrollToSection(event, page.href)
+        }}
       >
         {page.name}
       </a>
     {/each}
+
+    <a
+      class="ml-2 rounded-full bg-pink-700 p-2 px-4 text-white"
+      type="button"
+      href="#applications"
+      on:click={event => scrollToSection(event, '#applications')}
+    >
+      APPLY
+    </a>
+
     <button
       class="flex items-center gap-2 rounded-md px-3 py-2 transition-colors"
       type="button"
