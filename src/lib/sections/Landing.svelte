@@ -100,9 +100,6 @@
             </div>
           </div>
         </div>
-        <div class="mt-10 text-center text-3xl font-bold uppercase text-white">
-          Applications open in August!
-        </div>
       </div>
     </div>
   </div>

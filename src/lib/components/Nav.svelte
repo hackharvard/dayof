@@ -95,8 +95,8 @@
       <a
         class="ml-2 rounded-full bg-pink-700 p-2 px-4 text-white"
         type="button"
-        href="#applications"
-        on:click={event => scrollToSection(event, '#applications')}
+        href="https://portal.hackharvard.io"
+        target="_blank"
       >
         APPLY
       </a>
@@ -206,8 +206,8 @@
     <a
       class="ml-2 rounded-full bg-pink-700 p-2 px-4 text-white"
       type="button"
-      href="#applications"
-      on:click={event => scrollToSection(event, '#applications')}
+      href="https://portal.hackharvard.io"
+      target="_blank"
     >
       APPLY
     </a>

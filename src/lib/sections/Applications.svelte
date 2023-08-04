@@ -14,19 +14,11 @@
     <Marquee />
     <a
       class="pressable px-dynamic inline-block rounded-full bg-red-600 px-6 py-2 font-exo text-3xl uppercase text-white transition-colors before:bg-secondary hover:bg-red-500 sm:px-8 sm:py-3 sm:text-4xl md:px-10 md:py-4 md:text-6xl"
-      href="#applications"
+      href="https://portal.hackharvard.io"
+      target="_blank"
     >
       Apply!
     </a>
-    <div class="px-dynamic md:text-lg">
-      **Applications for HackHarvard 2023 will open in mid-August. Fill out <a
-        href="https://forms.gle/FyaEZ2Stqn1Zpezh7"
-        target="_blank"
-        class="text-red-600 transition-colors hover:text-green-400"
-      >
-        this form
-      </a> if you want to be notified when applications open.
-    </div>
     <div class="px-dynamic flex justify-center">
       <div class="relative">
         <img
