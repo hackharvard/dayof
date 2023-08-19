@@ -19,6 +19,17 @@
     </div>
   </a>
 
+  <a href="https://www.scm-lp.com/" target="_blank" rel="noopener noreferrer">
+    <div class="m-5 flex items-center justify-center">
+      <img
+        class="p-4 h-auto w-1/4 object-cover dark:rounded-3xl dark:bg-white "
+        src="images/sponsors/SCM.png"
+        alt="Stevens Capital Management"
+
+      />
+    </div>
+  </a>
+
   <p class="mt-5 text-center">
     Interested in becoming a sponsor? Please email us at <a
       class="link"
