@@ -18,17 +18,27 @@
       />
     </div>
   </a>
+  <div class="flex items-center justify-center">
+    <div class="grid w-7/12 grid-cols-2 gap-6" >
+      <a href="https://www.hudsonrivertrading.com/" target="_blank" rel="noopener noreferrer" class="p-1 dark:rounded-2xl dark:bg-white">
+        <div class="flex items-center h-full">
+          <img
+            src="images/sponsors/HRT.png"
+            alt="Hudson River Trading"
+          />
+        </div>
+      </a>
 
-  <a href="https://www.scm-lp.com/" target="_blank" rel="noopener noreferrer">
-    <div class="m-5 flex items-center justify-center">
-      <img
-        class="p-4 h-auto w-1/4 object-cover dark:rounded-3xl dark:bg-white "
-        src="images/sponsors/SCM.png"
-        alt="Stevens Capital Management"
-
-      />
+      <a href="https://www.scm-lp.com/" target="_blank" rel="noopener noreferrer" class="lg:p-12 md:p-8 sm:p-4 dark:rounded-2xl dark:bg-white">
+        <div class="flex items-center h-full">
+          <img
+            src="images/sponsors/SCM.png"
+            alt="Stevens Capital Management"
+          />
+        </div>
+      </a>
     </div>
-  </a>
+  </div>
 
   <p class="mt-5 text-center">
     Interested in becoming a sponsor? Please email us at <a
