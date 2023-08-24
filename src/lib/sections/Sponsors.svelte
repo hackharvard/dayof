@@ -19,21 +19,19 @@
     </div>
   </a>
   <div class="flex items-center justify-center">
-    <div class="grid w-7/12 grid-cols-2 gap-6">
-      <a href="https://www.hudsonrivertrading.com/" target="_blank" rel="noopener noreferrer">
-        <div class="flex items-center justify-center">
+    <div class="grid w-7/12 grid-cols-2 gap-6" >
+      <a href="https://www.hudsonrivertrading.com/" target="_blank" rel="noopener noreferrer" class="p-1 dark:rounded-2xl dark:bg-white">
+        <div class="flex items-center h-full">
           <img
-            class="h-fill w-auto object-cover p-1 dark:rounded-2xl dark:bg-white"
             src="images/sponsors/HRT.png"
             alt="Hudson River Trading"
           />
         </div>
       </a>
 
-      <a href="https://www.scm-lp.com/" target="_blank" rel="noopener noreferrer">
-        <div class="flex items-center justify-center">
+      <a href="https://www.scm-lp.com/" target="_blank" rel="noopener noreferrer" class="lg:p-12 md:p-8 sm:p-4 dark:rounded-2xl dark:bg-white">
+        <div class="flex items-center h-full">
           <img
-            class="h-fill w-auto object-cover p-4 dark:rounded-2xl dark:bg-white"
             src="images/sponsors/SCM.png"
             alt="Stevens Capital Management"
           />
