@@ -100,6 +100,10 @@
             </div>
           </div>
         </div>
+
+        <div class="mt-3">
+          <a class="link text-2xl font-bold" href="/wtf" target="_blank">wtf is a hackathon?!</a>
+        </div>
       </div>
     </div>
   </div>

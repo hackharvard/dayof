@@ -25,7 +25,10 @@
             <svelte:fragment slot="content">
               HackHarvard is an annual collegiate hackathon (i.e. coding competition) that brings
               together students from around the world to collaborate and create innovative projects
-              related to hardware, software, computer coding, and more.
+              related to hardware, software, computer coding, and more. Learn more <a
+                href="/wtf"
+                target="_blank">here</a
+              >.
             </svelte:fragment>
           </Disclosure>
           <Disclosure>
