@@ -1,11 +1,11 @@
 <div class="min-h-screen bg-secondary p-8 text-white">
   <div class="mx-auto max-w-4xl">
-    <h1 class="mb-4 text-7xl font-bold">WTF is a Hackathon?</h1>
+    <h1 class="mb-4 font-exo text-7xl font-bold">wtf is a hackathon?!</h1>
 
     <p class="mb-6 text-lg">
       Welcome to the exciting world of hackathons! A hackathon is a creative, fast-paced event where
       individuals come together to collaborate, innovate, and build awesome projects in a short
-      amount of time.
+      amount of time. At HackHarvard, you have 36 hours to create something amazing!
     </p>
 
     <img src="images/2022/code.jpg" alt="Hackathon Image" class="mb-6 rounded-lg shadow-lg" />
@@ -28,6 +28,18 @@
     <img src="images/2022/work.jpg" alt="Work Image" class="mb-6 rounded-lg shadow-lg" />
 
     <p class="mb-6 text-lg">
+      The world of tech is incredibly interdisciplinary, welcoming skills like design, project
+      management, presentation, and more. You don't even need to know how to code – there's a place
+      for everyone!
+    </p>
+
+    <img
+      src="images/2022/design.jpg"
+      alt="Interdisciplinary Image"
+      class="mb-6 rounded-lg shadow-lg"
+    />
+
+    <p class="mb-6 text-lg">
       Don't worry if you're feeling stuck or need guidance – our mentors are here to help you every
       step of the way. They're experienced hackers who can offer insights, advice, and support.
     </p>
@@ -47,18 +59,6 @@
     </p>
 
     <img src="images/2022/sleep.jpg" alt="Sleeping Area Image" class="mb-6 rounded-lg shadow-lg" />
-
-    <p class="mb-6 text-lg">
-      The world of tech is incredibly interdisciplinary, welcoming skills like design, project
-      management, presentation, and more. You don't even need to know how to code – there's a place
-      for everyone!
-    </p>
-
-    <img
-      src="images/2022/design.jpg"
-      alt="Interdisciplinary Image"
-      class="mb-6 rounded-lg shadow-lg"
-    />
 
     <p class="mb-6 text-lg">
       Beyond the prizes and workshops, HackHarvard is a fantastic opportunity to meet like-minded
