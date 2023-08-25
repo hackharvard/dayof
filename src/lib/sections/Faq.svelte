@@ -26,6 +26,7 @@
               HackHarvard is an annual collegiate hackathon (i.e. coding competition) that brings
               together students from around the world to collaborate and create innovative projects
               related to hardware, software, computer coding, and more. Learn more <a
+                class="link"
                 href="/wtf"
                 target="_blank">here</a
               >.
