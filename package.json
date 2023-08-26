@@ -27,6 +27,7 @@
   },
   "type": "module",
   "dependencies": {
+    "@sveltejs/adapter-vercel": "^3.0.3",
     "clsx": "^1.2.1",
     "date-fns": "^2.30.0",
     "lodash-es": "^4.17.21"
