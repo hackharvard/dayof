@@ -19,7 +19,7 @@
     >
       Apply!
     </a>
-    <div class="px-dynamic flex justify-center">
+    <!-- <div class="px-dynamic flex justify-center">
       <div class="relative">
         <img
           class="h-40 max-h-48 object-fill sm:h-full"
@@ -33,21 +33,31 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
     <div class="px-dynamic flex justify-center">
       <div class="relative">
         <img
-          class="h-40 max-h-48 object-fill sm:h-full"
+          class="h-48 max-h-48 object-fill sm:h-full"
           src={'images/arrows/right' + ($theme == 'dark' ? '-dark' : '-light') + '.png'}
           alt=""
         />
         <div class="absolute bottom-0 left-0 right-0 top-0 flex items-center justify-center">
           <div class="font-exo uppercase text-white">
-            <div class="text-3xl md:text-4xl">Regular Deadline</div>
-            <div class="text-2xl">September 25th</div>
+            <div class="text-3xl md:text-4xl">Deadline</div>
+            <div class="text-2xl">October 6th</div>
           </div>
         </div>
       </div>
+    </div>
+    <div class="px-dynamic flex justify-center font-lato font-bold">
+      Note: We have extended our regular deadline from September 25th to October 6th. However, you
+      should still complete your application ASAP because we will be evaluating applications on a
+      rolling basis after September 25th.
+    </div>
+    <div class="px-dynamic flex justify-center font-lato font-bold">
+      Also note: If you are a Harvard undergraduate, you will receive automatic admission to
+      HackHarvard 2023, but you must still complete the application (you may leave essay questions
+      blank).
     </div>
   </div>
 </div>
