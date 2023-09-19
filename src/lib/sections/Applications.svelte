@@ -51,7 +51,7 @@
     </div>
     <div class="px-dynamic flex justify-center font-lato font-bold">
       Note: We have extended our regular deadline from September 25th to October 6th. However, you
-      should still complete your application ASAP because we will be evaluating applications on a
+      should still complete your application ASAP because we will be accepting applications on a
       rolling basis after September 25th.
     </div>
     <div class="px-dynamic flex justify-center font-lato font-bold">
