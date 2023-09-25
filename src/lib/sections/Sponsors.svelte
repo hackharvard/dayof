@@ -1,12 +1,3 @@
-<script>
-  const sponsors = {
-    launchIt: Array(2).fill({ img: 'https://picsum.photos/300/200', name: 'Company' }),
-    buildIt: Array(8).fill({ img: 'https://picsum.photos/300/200', name: 'Company' }),
-    designIt: Array(4).fill({ img: 'https://picsum.photos/300/200', name: 'Company' }),
-    dreamIt: Array(4).fill({ img: 'https://picsum.photos/300/200', name: 'Company' })
-  }
-</script>
-
 <div class="py-dynamic bg-purple-100 dark:bg-secondary" id="sponsors">
   <h1 class="text-center font-exo text-5xl font-bold uppercase sm:text-7xl">Sponsors</h1>
   <a href="https://tryterra.co/" target="_blank" rel="noopener noreferrer">
@@ -19,7 +10,7 @@
     </div>
   </a>
   <div class="flex items-center justify-center">
-    <div class="grid w-7/12 grid-cols-2 gap-6">
+    <div class="grid w-10/12 grid-cols-3 gap-6">
       <a
         href="https://www.hudsonrivertrading.com/"
         target="_blank"
@@ -39,6 +30,28 @@
       >
         <div class="flex h-full items-center">
           <img src="images/sponsors/SCM.png" alt="Stevens Capital Management" />
+        </div>
+      </a>
+
+      <a
+        href="https://www.careyaya.org/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="dark:rounded-2xl dark:bg-white sm:p-4 md:p-8 lg:p-12"
+      >
+        <div class="flex h-full items-center">
+          <img src="images/sponsors/careyaya.svg" alt="Careyaya" />
+        </div>
+      </a>
+
+      <a
+        href="https://www.tensordock.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="dark:rounded-2xl dark:bg-white sm:p-4 md:p-8 lg:p-12"
+      >
+        <div class="flex h-full items-center">
+          <img src="images/sponsors/tensordock.svg" alt="Tensordock" />
         </div>
       </a>
 
