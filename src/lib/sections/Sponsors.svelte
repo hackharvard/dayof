@@ -56,7 +56,7 @@
       </a>
 
       <a
-        href="https://www.stickermule.com/"
+        href="https://mule.to/p4g8"
         target="_blank"
         rel="noopener noreferrer"
         class="dark:rounded-2xl dark:bg-white sm:p-4 md:p-8 lg:p-12"
