@@ -44,20 +44,13 @@
         <div class="absolute bottom-0 left-0 right-0 top-0 flex items-center justify-center">
           <div class="font-exo uppercase text-white">
             <div class="text-3xl md:text-4xl">Deadline</div>
-            <div class="text-2xl">October 6th</div>
+            <div class="text-2xl">October 6th (CLOSED)</div>
           </div>
         </div>
       </div>
     </div>
     <div class="px-dynamic flex justify-center font-lato font-bold">
-      Note: We have extended our regular deadline from September 25th to October 6th. However, you
-      should still complete your application ASAP because we will be accepting applications on a
-      rolling basis after September 25th.
-    </div>
-    <div class="px-dynamic flex justify-center font-lato font-bold">
-      Also note: If you are a Harvard undergraduate, you will receive automatic admission to
-      HackHarvard 2023, but you must still complete the application (you may leave essay questions
-      blank).
+      Note: WE ARE NO LONGER ACCEPTING APPLICATIONS FOR HACKHARVARD 2023.
     </div>
   </div>
 </div>

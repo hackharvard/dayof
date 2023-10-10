@@ -1,14 +1,30 @@
 <div class="py-dynamic bg-purple-100 dark:bg-secondary" id="sponsors">
   <h1 class="text-center font-exo text-5xl font-bold uppercase sm:text-7xl">Sponsors</h1>
-  <a href="https://tryterra.co/" target="_blank" rel="noopener noreferrer">
-    <div class="m-5 flex items-center justify-center">
-      <img
-        class="h-1/2 w-8/12 object-cover dark:rounded-2xl dark:bg-white"
-        src="images/sponsors/terra_api.png"
-        alt="TerraAPI"
-      />
+  <div class="mb-5 mt-5 flex items-center justify-center">
+    <div class="grid w-10/12 grid-cols-2 gap-6">
+      <a
+        href="https://tryterra.co/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="dark:rounded-2xl dark:bg-white sm:p-4 md:p-8 lg:p-12"
+      >
+        <div class="flex h-full items-center">
+          <img src="images/sponsors/terra_api.png" alt="TerraAPI" />
+        </div>
+      </a>
+      <a
+        href="https://tryterra.co/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="dark:rounded-2xl dark:bg-white sm:p-4 md:p-8 lg:p-12"
+      >
+        <div class="flex h-full items-center">
+          <img src="images/sponsors/BGB.png" alt="TerraAPI" />
+        </div>
+      </a>
     </div>
-  </a>
+  </div>
+
   <div class="flex items-center justify-center">
     <div class="grid w-10/12 grid-cols-3 gap-6">
       <a
