@@ -13,13 +13,13 @@
         </div>
       </a>
       <a
-        href="https://tryterra.co/"
+        href="https://www.bgbgroup.com/"
         target="_blank"
         rel="noopener noreferrer"
         class="dark:rounded-2xl dark:bg-white sm:p-4 md:p-8 lg:p-12"
       >
         <div class="flex h-full items-center">
-          <img src="images/sponsors/BGB.png" alt="TerraAPI" />
+          <img src="images/sponsors/BGB.png" alt="BGB Group" />
         </div>
       </a>
     </div>
