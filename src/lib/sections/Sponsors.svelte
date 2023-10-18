@@ -1,7 +1,8 @@
 <div class="py-dynamic bg-purple-100 dark:bg-secondary" id="sponsors">
   <h1 class="text-center font-exo text-5xl font-bold uppercase sm:text-7xl">Sponsors</h1>
+
   <div class="mb-5 mt-5 flex items-center justify-center">
-    <div class="grid w-10/12 grid-cols-2 gap-6">
+    <div class="grid w-7/12 grid-cols-1 gap-6">
       <a
         href="https://tryterra.co/"
         target="_blank"
@@ -10,6 +11,21 @@
       >
         <div class="flex h-full items-center">
           <img src="images/sponsors/terra_api.png" alt="TerraAPI" />
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <div class="mb-5 mt-5 flex items-center justify-center">
+    <div class="grid w-10/12 grid-cols-2 gap-6">
+      <a
+        href="https://www.aramco.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="dark:rounded-2xl dark:bg-white sm:p-4 md:p-8 lg:p-12"
+      >
+        <div class="flex h-full items-center">
+          <img src="images/sponsors/aramco.png" alt="Aramco" />
         </div>
       </a>
       <a
