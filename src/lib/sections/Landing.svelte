@@ -7,7 +7,7 @@
   // Countdown
   let countdown
   let remainingTime = { months: 0, days: 0, hours: 0, minutes: 0 }
-  const targetDate = new Date('2023-10-20T00:00:00Z').getTime()
+  const targetDate = new Date('2023-10-21T00:00:00Z').getTime()
   // const fmtdDate = format(new Date('2023-10-14T00:00:00Z'), 'MMM d, yyyy')
   function updateCountdown() {
     const now = new Date().getTime()
