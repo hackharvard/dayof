@@ -6,7 +6,7 @@
 <div class="bg-purple-100 dark:bg-black">
   <div
     class="py-dynamic space-y-4 bg-applications-light bg-cover text-center dark:bg-applications-dark sm:space-y-8"
-    id="applications"
+    id="checkin"
   >
     <h1 class="px-dynamic font-exo text-5xl uppercase text-violet-700 dark:text-white sm:text-7xl">
       DAY OF & CHECK-IN

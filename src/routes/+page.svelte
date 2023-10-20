@@ -1,9 +1,10 @@
 <script>
-  import Applications from '$lib/sections/Applications.svelte'
   import Faq from '$lib/sections/Faq.svelte'
   import Landing from '$lib/sections/Landing.svelte'
+  import Checkin from '$lib/sections/Checkin.svelte'
   import Speakers from '$lib/sections/Speakers.svelte'
   import Tracks from '$lib/sections/Tracks.svelte'
+  import Challenges from '$lib/sections/Challenges.svelte'
   import Welcome from '$lib/sections/Welcome.svelte'
   import Sponsors from '$lib/sections/Sponsors.svelte'
   import Hype from '../lib/sections/Hype.svelte'
@@ -38,15 +39,11 @@
   {/if}
 
   <main class="mt-20">
-    <Landing />
-    <Welcome />
     <Tracks />
-    <Applications />
+    <Challenges />
+    <Checkin />
     <Schedule />
-    <Faq />
-    <Hype />
     <Speakers />
-    <Sponsors />
   </main>
   <Footer />
 {/if}

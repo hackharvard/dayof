@@ -19,39 +19,47 @@
     open = false
   }
   const pages = [
-    { name: 'HOME', href: '#home' },
+    // { name: 'HOME', href: '#home' },
     // {
     //   name: 'WELCOME',
     //   href: '#welcome'
     // },
-    // {
-    //   name: 'Tracks',
-    //   href: '#tracks'
-    // },
+    {
+      name: 'TRACKS',
+      href: '#tracks'
+    },
+    {
+      name: 'CHALLENGES',
+      href: '#challenges'
+    },
     // {
     //   name: 'APPLICATIONS',
     //   href: '#applications'
     // },
     {
+      name: 'CHECKIN',
+      href: '#checkin'
+    },
+    {
       name: 'SCHEDULE',
       href: '#schedule'
     },
-    {
-      name: 'FAQ',
-      href: '#faq'
-    },
-    {
-      name: 'HYPE',
-      href: '#hype'
-    },
     // {
-    //   name: 'SPEAKERS',
-    //   href: '#speakers'
+    //   name: 'FAQ',
+    //   href: '#faq'
+    // },
+    // {
+    //   name: 'HYPE',
+    //   href: '#hype'
     // },
     {
-      name: 'SPONSORS',
-      href: '#sponsors'
+      name: 'SPEAKERS',
+      href: '#speakers'
     }
+    // {
+    //   name: 'SPONSORS',
+    //   href: '#sponsors'
+    // }
   ]
   function updateShadow() {
     shadow = window.scrollY !== 0
