@@ -7,6 +7,7 @@
   import Welcome from '$lib/sections/Welcome.svelte'
   import Sponsors from '$lib/sections/Sponsors.svelte'
   import Hype from '../lib/sections/Hype.svelte'
+  import Schedule from '../lib/sections/Schedule.svelte'
   import '../app.css'
   import Footer from '$lib/components/Footer.svelte'
   import Nav from '$lib/components/Nav.svelte'
@@ -41,6 +42,7 @@
     <Welcome />
     <Tracks />
     <Applications />
+    <Schedule />
     <Faq />
     <Hype />
     <Speakers />
