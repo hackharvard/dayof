@@ -9,17 +9,20 @@
     id="applications"
   >
     <h1 class="px-dynamic font-exo text-5xl uppercase text-violet-700 dark:text-white sm:text-7xl">
-      APPLICATIONS
+      DAY OF & CHECK-IN
     </h1>
     <Marquee />
     <a
-      class="pressable px-dynamic inline-block rounded-full bg-red-600 px-6 py-2 font-exo text-3xl uppercase text-white transition-colors before:bg-secondary hover:bg-red-500 sm:px-8 sm:py-3 sm:text-4xl md:px-10 md:py-4 md:text-6xl"
+      class="pressable px-dynamic inline-block rounded-full bg-red-600 px-6 py-2 font-exo text-2xl uppercase text-white transition-colors before:bg-secondary hover:bg-red-500 sm:px-8 sm:py-3 sm:text-4xl md:px-10 md:py-4 md:text-2xl"
       href="https://portal.hackharvard.io"
       target="_blank"
     >
-      Apply!
+      Portal
     </a>
-    <!-- <div class="px-dynamic flex justify-center">
+    <div class="px-dynamic flex justify-center font-lato font-bold">
+      When you check in, you'll be asked to present the QR code in your portal.
+    </div>
+    <div class="px-dynamic flex justify-center">
       <div class="relative">
         <img
           class="h-40 max-h-48 object-fill sm:h-full"
@@ -28,12 +31,12 @@
         />
         <div class="absolute bottom-0 left-0 right-0 top-0 flex items-center justify-center">
           <div class="font-exo uppercase text-white">
-            <div class="text-3xl md:text-4xl">Early Deadline</div>
-            <div class="text-2xl">September 4th</div>
+            <div class="text-3xl md:text-4xl">Check In</div>
+            <div class="text-2xl">Friday October 20, 4 PM - 7 PM</div>
           </div>
         </div>
       </div>
-    </div> -->
+    </div>
     <div class="px-dynamic flex justify-center">
       <div class="relative">
         <img
@@ -43,8 +46,8 @@
         />
         <div class="absolute bottom-0 left-0 right-0 top-0 flex items-center justify-center">
           <div class="font-exo uppercase text-white">
-            <div class="text-3xl md:text-4xl">Deadline</div>
-            <div class="text-2xl">October 6th (CLOSED)</div>
+            <div class="text-3xl md:text-4xl">Submission Deadline</div>
+            <div class="text-2xl">Sunday October 22, 8 AM</div>
           </div>
         </div>
       </div>

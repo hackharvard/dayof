@@ -98,7 +98,7 @@
         href="https://portal.hackharvard.io"
         target="_blank"
       >
-        APPLY
+        PORTAL
       </a>
 
       <button class="ml-2 rounded-full p-1" type="button" on:click={handleTheme}>
@@ -209,7 +209,7 @@
       href="https://portal.hackharvard.io"
       target="_blank"
     >
-      APPLY
+      PORTAL
     </a>
 
     <button

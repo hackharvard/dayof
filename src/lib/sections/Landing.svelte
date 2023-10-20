@@ -66,9 +66,14 @@
           </p>
           <p class="mt-5 text-center font-exo text-2xl text-white">
             <span class="mr-1 text-white"> Powered by </span>
-            <a href="https://tryterra.co/" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://tryterra.co/"
+              target="_blank"
+              class="py-1/2 rounded-lg bg-white px-2"
+              rel="noopener noreferrer"
+            >
               <img
-                class="inline-block w-3/12 rounded-lg bg-white object-cover"
+                class="inline-block w-2/12 object-cover"
                 src="images/sponsors/terra_api.png"
                 alt="TerraAPI"
               />

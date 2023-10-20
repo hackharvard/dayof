@@ -6,15 +6,15 @@
     {
       img: '/images/speakers/richard.png',
       name: 'Richard Stallman',
-      role: 'Software Engineer',
+      role: 'Software Engineer & Activist',
       bio: 'Richard Stallman is an American free software movement activist and programmer. He campaigns for software to be distributed in such a manner that its users have the freedom to use, study, distribute, and modify that software. '
     },
     {
       img: '/images/speakers/husain.jpg',
       name: 'Husain Al-Mohsenn',
-      role: 'Director of AI',
+      role: 'Director of AI, Walmart',
       bio: 'Husain Al-Mohsenn is Director of AI at Walmart/Alert Innovation. He prides himself in mastering the trade-offs needed to build software and data-driven systems that deliver value, quickly, accurately and with minimal complexity.'
-    },
+    }
   ]
   // onMount(() => {
   //   fetch('https://randomuser.me/api/?results=10')
