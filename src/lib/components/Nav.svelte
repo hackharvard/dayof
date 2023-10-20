@@ -33,6 +33,10 @@
     //   href: '#applications'
     // },
     {
+      name: 'SCHEDULE',
+      href: '#schedule'
+    },
+    {
       name: 'FAQ',
       href: '#faq'
     },
