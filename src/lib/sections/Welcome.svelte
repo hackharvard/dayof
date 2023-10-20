@@ -12,25 +12,18 @@
     <div
       class="absolute -left-1 h-full w-full border-2 border-white bg-gradient-to-br from-[#f5d0ce] to-[#faf3f2] dark:border-white dark:from-[#00000000] dark:to-[#00000000] md:left-0"
     />
-    <div class="relative flex h-full flex-col items-center px-[1rem] py-[5rem]">
+    <div class="relative flex h-full flex-col items-center px-[1rem] pt-[3rem]">
       <h1 class="-mt-[2rem] text-center font-exo text-[2rem] dark:text-white md:text-[3rem]">
         WELCOME TO HACKHARVARD 2023
       </h1>
-      <div class="ml-[2rem] w-10/12">
-        <div class="mt-[1rem] text-left text-[1.1rem] dark:text-white">
-          <p>
-            Join us for the eighth iteration of HackHarvard, an exhilarating 36-hour free
-            undergraduate hackathon hosted at Harvard University.
-          </p>
-        </div>
-        <div class="mt-[1rem] text-left text-[1.1rem] dark:text-white">
-          <p>
-            Our theme for this year is Hack to the Future! Join us for an extraordinary voyage
-            through time, where cutting-edge technology and boundless creativity converge,
-            propelling us toward a future built on innovation and limitless possibilities.
-          </p>
-        </div>
-      </div>
     </div>
+    <div class="relative flex h-full flex-col items-center px-[1rem] pt-[2rem]">
+      <h1 class="-mt-[2rem] text-center font-exo text-[2.5rem] dark:text-white md:text-[2.5rem]">
+        ACCESS OUR DEVPOST <a href="https://hackharvard-2023.devpost.com" style="color: #34a4eb"
+          >HERE</a
+        >
+      </h1>
+    </div>
+    <br />
   </div>
 </div>

@@ -7,7 +7,8 @@
       name: 'Terra API',
       desc: 'SMASH the competition by showcasing the most promising use of the Terra API specifically.',
       prizes: [
-        'The best use of the API will win limited edition Hulk-themed trophies, and be invited to interview for a position in Terra.'
+        'Invitation to interview for a position in Terra.',
+        'Limited edition Hulk-themed trophies!'
       ]
     },
     {
@@ -32,7 +33,7 @@
     {
       img: 'images/challenges/mathworks.png',
       name: 'MathWorks',
-      desc: 'MATLAB must be used significantly in the submission, using code authored in other programming languages or platforms is permitted but must be integrated into MATLAB. All submissions MUST be tagged with MATLAB on Devpost. Submissions must include external, and user-created functions to run the code. Must contain a PDF or HTML report detailing your submission along with visualization of your output. Apps developed in MATLAB are also allowed. For extra credit, submit a short 2- minute video explaining your submission and how it tackles the problem at hand on Devpost."',
+      desc: 'MATLAB must be used significantly in the submission, using code authored in other programming languages or platforms is permitted but must be integrated into MATLAB. All submissions MUST be tagged with MATLAB on Devpost. Submissions must include external, and user-created functions to run the code. Must contain a PDF or HTML report detailing your submission along with visualization of your output. Apps developed in MATLAB are also allowed. For extra credit, submit a short 2- minute video explaining your submission and how it tackles the problem at hand on Devpost.',
       prizes: ['TBA']
     },
     {

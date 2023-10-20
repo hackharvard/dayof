@@ -39,6 +39,7 @@
   {/if}
 
   <main class="mt-20">
+    <Welcome />
     <Tracks />
     <Challenges />
     <Checkin />

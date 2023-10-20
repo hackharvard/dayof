@@ -15,7 +15,8 @@
         'What opportunities exist for addressing mental health challenges through technology?',
         'Can we create tools to encourage healthier eating habits and nutrition choices?',
         'How can we use technology to motivate and engage individuals in fitness and wellness programs?'
-      ]
+      ],
+      prizes: ['Invitation to interview for a position in Terra.', 'Garmin Venus 2 Watches!']
     },
     {
       img: 'images/tracks/space.jpg',
