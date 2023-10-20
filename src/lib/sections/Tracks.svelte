@@ -15,6 +15,11 @@
         'What opportunities exist for addressing mental health challenges through technology?',
         'Can we create tools to encourage healthier eating habits and nutrition choices?',
         'How can we use technology to motivate and engage individuals in fitness and wellness programs?'
+      ],
+      prizes: [
+        'Invitation to a fast-track interview with Terra team for a chance to join the team for internship or a full-time job!',
+        'Garmin Venus 2 Watches!',
+        'Limited-edition Hulk trophies!'
       ]
     },
     {
@@ -29,7 +34,8 @@
         'How can space technology benefit life on Earth, from communications to resource utilization?',
         'What solutions can address space debris and ensure the long-term sustainability of space activities?',
         'How can we harness Earth and space data for scientific research and global benefit?'
-      ]
+      ],
+      prizes: ['Drones!']
     },
     {
       img: 'images/tracks/better.jpg',
@@ -43,7 +49,8 @@
         'How can we address pain points and inefficiencies in current systems or technologies?',
         'What are the most pressing issues where doing things "better" would have the greatest impact?',
         'Can we reimagine traditional business models or approaches to create more value?'
-      ]
+      ],
+      prizes: ['Hydroflasks!']
     },
     {
       img: 'images/tracks/efficiency.jpg',
@@ -57,7 +64,8 @@
         'How can we improve energy efficiency and reduce environmental impact through innovation?',
         'What solutions can boost productivity and reduce downtime in manufacturing or services?',
         'Are there untapped opportunities to make complex systems more user-friendly and efficient?'
-      ]
+      ],
+      prizes: ['Portable chargers!']
     }
   ]
 </script>

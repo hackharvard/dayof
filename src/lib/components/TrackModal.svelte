@@ -160,6 +160,7 @@
               {/each}
             </ol>
           {/if}
+          <br />
           {#if track.prizes}
             <div class="mb-4 font-bold">Prizes</div>
             <ol>
