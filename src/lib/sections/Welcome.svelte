@@ -19,6 +19,15 @@
     </div>
     <div class="relative flex h-full flex-col items-center px-[1rem] pt-[2rem]">
       <h1 class="-mt-[2rem] text-center font-exo text-[2.5rem] dark:text-white md:text-[2.5rem]">
+        FILL OUT PRESUBMISSION FORM DUE SATURDAY MIDNIGHT HERE <a
+          href="https://docs.google.com/forms/d/e/1FAIpQLScSv7NfyAFPrguBzqkTpor5W6NFx8G-eK7mK1qCUZngLs73yA/viewform?usp=sf_link"
+          target="_blank"
+          style="color: #34a4eb">HERE</a
+        >
+      </h1>
+    </div>
+    <div class="relative flex h-full flex-col items-center px-[1rem] pt-[2rem]">
+      <h1 class="-mt-[2rem] text-center font-exo text-[2.5rem] dark:text-white md:text-[2.5rem]">
         ACCESS OUR DEVPOST <a href="https://hackharvard-2023.devpost.com" style="color: #34a4eb"
           >HERE</a
         >
