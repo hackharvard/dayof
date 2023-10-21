@@ -7,7 +7,7 @@
   />
   <div class="relative mx-auto w-11/12 md:w-10/12">
     <div
-      class="absolute bottom-5 left-3 h-full w-full border-2 border-white bg-gradient-to-br from-[#f5d0ce] to-[#faf3f2] dark:border-white dark:from-[#00000000] dark:to-[#00000000] md:left-5"
+      class=" bottom-5 left-3 h-full w-full border-2 border-white bg-gradient-to-br from-[#f5d0ce] to-[#faf3f2] dark:border-white dark:from-[#00000000] dark:to-[#00000000] md:left-5"
     />
     <div
       class="absolute -left-1 h-full w-full border-2 border-white bg-gradient-to-br from-[#f5d0ce] to-[#faf3f2] dark:border-white dark:from-[#00000000] dark:to-[#00000000] md:left-0"

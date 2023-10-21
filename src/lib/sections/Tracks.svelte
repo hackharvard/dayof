@@ -68,26 +68,21 @@
 
 <div class="py-dynamic bg-purple-100 dark:bg-secondary" id="tracks">
   <h1 class="text-center font-exo text-5xl font-bold uppercase sm:text-7xl">tracks</h1>
-  <div class="px-dynamic mt-5 flex items-center justify-center">
-    {#each tracks as track}
-      <Modal
-        class="overflow-hidden rounded-md px-2 transition-transform hover:scale-[1.05]"
-        {track}
-      >
-        <div class="sm:h-64 sm:w-64">
-          <img
-            class="h-full w-full object-cover"
-            src={track.img}
-            alt={track.name}
-            style="background-color:white"
-          />
+  {#each tracks as track}
+    <Modal class="overflow-hidden rounded-md px-2 transition-transform hover:scale-[1.05]" {track}>
+      <div class="sm:h-64 sm:w-64">
+        <img
+          class="h-full w-full object-cover"
+          src={track.img}
+          alt={track.name}
+          style="background-color:white"
+        />
+      </div>
+      <div class="bg-white dark:bg-secondary-100">
+        <div class="text-center">
+          <div class="whitespace-pre-line font-bold">{track.name}</div>
         </div>
-        <div class="bg-white dark:bg-secondary-100">
-          <div class="text-center">
-            <div class="whitespace-pre-line font-bold">{track.name}</div>
-          </div>
-        </div>
-      </Modal>
-    {/each}
-  </div>
+      </div>
+    </Modal>
+  {/each}
 </div>

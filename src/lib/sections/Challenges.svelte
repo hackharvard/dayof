@@ -12,6 +12,14 @@
       ]
     },
     {
+      img: 'images/challenges/BGB.jpg',
+      name: 'BGB Group',
+      desc: 'EARLIER DIAGNOSIS: How might we create urgency with primary care physicians (PCPs) to implement consistent cognitive screening (neurocognitive assessments and/or use of blood-based biomarkers) to proactively identify AD patients early in their disease progression and refer to neurologists?',
+      prizes: [
+        'Each team member will receive a $250 Amex gift card and an interview opportunity for a 5-week paid apprenticeship.'
+      ]
+    },
+    {
       img: 'images/challenges/nucleus_genomics.jpg',
       name: 'Nucleus Genomics',
       desc: 'TBA',
@@ -36,14 +44,7 @@
       desc: 'MATLAB must be used significantly in the submission, using code authored in other programming languages or platforms is permitted but must be integrated into MATLAB. All submissions MUST be tagged with MATLAB on Devpost. Submissions must include external, and user-created functions to run the code. Must contain a PDF or HTML report detailing your submission along with visualization of your output. Apps developed in MATLAB are also allowed. For extra credit, submit a short 2- minute video explaining your submission and how it tackles the problem at hand on Devpost.',
       prizes: ['TBA']
     },
-    {
-      img: 'images/challenges/BGB.jpg',
-      name: 'BGB Group',
-      desc: 'EARLIER DIAGNOSIS: How might we create urgency with primary care physicians (PCPs) to implement consistent cognitive screening (neurocognitive assessments and/or use of blood-based biomarkers) to proactively identify AD patients early in their disease progression and refer to neurologists?',
-      prizes: [
-        'Each team member will receive a $250 Amex gift card and an interview opportunity for a 5-week paid apprenticeship.'
-      ]
-    },
+
     {
       img: 'images/challenges/gcloud.jpg',
       name: 'Google Cloud',
@@ -93,30 +94,26 @@
 
 <div class="py-dynamic bg-purple-100 dark:bg-secondary" id="challenges">
   <h1 class="text-center font-exo text-5xl font-bold uppercase sm:text-7xl">challenges</h1>
-  <div class="px-dynamic mt-10 flex items-center justify-center">
-    <div class="flex h-screen items-center justify-center">
-      <div class="flex flex-wrap items-center justify-center">
-        {#each challenges as track}
-          <Modal
-            class="overflow-hidden rounded-md px-2 transition-transform hover:scale-[1.05]"
-            {track}
-          >
-            <div class="sm:h-64 sm:w-64">
-              <img
-                class="h-full w-full object-cover"
-                src={track.img}
-                alt={track.name}
-                style="background-color:white"
-              />
-            </div>
-            <div class="bg-white p-3 dark:bg-secondary-100">
-              <div class="text-center">
-                <div class="whitespace-pre-line font-bold">{track.name}</div>
-              </div>
-            </div>
-          </Modal>
-        {/each}
-      </div>
-    </div>
+  <div>
+    {#each challenges as track}
+      <Modal
+        class="overflow-hidden rounded-md px-2 transition-transform hover:scale-[1.05]"
+        {track}
+      >
+        <div class="sm:h-64 sm:w-64">
+          <img
+            class="h-full w-full object-cover"
+            src={track.img}
+            alt={track.name}
+            style="background-color:white"
+          />
+        </div>
+        <div class="bg-white p-3 dark:bg-secondary-100">
+          <div class="text-center">
+            <div class="whitespace-pre-line font-bold">{track.name}</div>
+          </div>
+        </div>
+      </Modal>
+    {/each}
   </div>
 </div>
